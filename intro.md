@@ -33,9 +33,17 @@ We therefore propose what we will call “Web Zero”, which both supports the a
 ### Web Zero
 In Web Zero, pages consist of both the semantic data behind the presentation and the rules to transform them to (and from) the presentation, all of which is transferred to the client. Thus, as in Web 1.0, the client has a complete unit of content which can taken offline and edited elsewhere. And as in Web 1.0, the only operation which must be protected with authorization is the server-side state change in which a new version is “pushed” to become the authoritative version. But unlike Web 1.0, the data that is edited is semantic and normalized, reducing inconsistencies.
 
-Because the data and presentation are portable, and because the data is normalized, various modes of interaction and collaboration become possible. Experimentation is also easier: where today you can open the DevTools and poke at the DOM, under Web Zero you can just as easily poke at the data and see the result.
+Because the data and presentation are portable, and because the data is normalized, various modes of interaction and collaboration become possible. Experimentation is also easier: where today you can open the DevTools and poke at the DOM, under Web Zero you can just as easily poke at the data and see the result (and DevTools extensions could exist in future for exactly this purpose!).
 
 New versions can then be pushed back to the original by various means, as authorized by the owner of the page, such as HTTP PUTting the new version, offering the equivalent of a pull request, or participating in a m-ld domain of which the original is a clone.
+
+A Web 2.0-style interactive page could be supported in the same model. In this case, the page presentation includes suitable data-editing features, and the users' contributions are pushed to other users 'live'. This can be implemented in multiple ways, which aren't too far from what we already have today:
+
+1. A POST request to the server, then synchronize local state using the response or a websocket,
+2. Also make an optimistic update to the local state, which may roll back if the server refuses the change, or
+3. Make the change primarily to the local data model and synchronize it back to the server (which is a m-ld-like approach).
+
+These are all very much like what happens in Web 2.0, with one important distinction: the client-side data always ends up in RDF form in the page and can be taken offline from there. If you open up Facebook, the data which drives the lists of posts and comments isn't available for you to save; if you choose "File → Save Page As…" you'll end up with something not terribly useful. In the Web Zero version, you'd end up with a fully _locally_ functional page. In the first approach above (POSTing to the server), server interactions like adding a new comment with the provided UI aren't without talking to a live server, but you can still "manually" add a comment to the data and see it appear on the page. In the third approach (m-ld-like), you get to use the app's UI to edit the data locally. In the middle approach (POST with optimistic update), you may also be able to use the app's UI, assuming the app is written to allow the optimistic updates to stand when we can't get them back to the live server.
 
 ## m-ld’s Role in Web Zero
 
