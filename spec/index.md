@@ -1,9 +1,9 @@
 # contents
 
 1. [Introduction](index.md)
-2. [Motivating Use-Cases](use-cases/index.md)
-3. [What Does Sustainability Mean](sustainability.md)
-4. [Technical Design](design/index.md)
+2. [Motivating Use-Cases](use-cases.md)
+3. [Sustainability for Web Apps](sustainability.md)
+4. Technical Design
    1. [Prior Art](design/prior-art.md)
    2. [Project Hypothesis](design/hypothesis.md)
    3. [API](design/api.md)
@@ -67,12 +67,12 @@ a Solid app, they can also bring their own Gateways to these collaborative apps.
 
 # background (how we got here)
 
-| Doc                                                                                                                   | Published/Last Updated | Purpose                                                                       |
-|-----------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------------------------|
-| [Web Zero, with m-ld](https://github.com/m-ld/web-zero/wiki/Proposal)                                                 | 01-02-22               | Original Web Zero Proposal                                                    |
-| [Questions](https://github.com/m-ld/web-zero/wiki/Questions)                                                          | 30-03-22               | Feedback questions on proposal                                                |
-| [Web Zero with RDFa “Spec”](https://github.com/m-ld/web-zero/blob/main/spec.md)                                       | 20-02-23               | Emphasis on Linked Data rather than plain DOM                                 |
-| [Web Zero Demo](https://github.com/m-ld/web-zero/blob/main/intro.md)                                                  | 21-02-23               | Web Zero 2023 concept (low m-ld specificity)                                  |
-| [Web Zero (without DOM) (WIP).md](https://gist.github.com/Peeja/0212d1a299d78d92ddf3d5563e6bd1f9)                     | 08-03-23               | Justifying framework compatibility instead of DOM manipulation in the project |
-| [Web Zero, with m-ld.delta](https://docs.google.com/document/u/1/d/1DrMr_PI6P81w1spiUDBTkOJGz0bPS2sZIXhCz51p7CE/edit) | 08-05-23 | Justification change of direction, rolling up parts of 3-6                    |
-| [Sustainable Web Apps, with m-ld.plan](https://docs.google.com/document/u/1/d/17YnR6f8Xp69E09sO3BShSP5H6PXx3sDGNTVxNyvl56s/edit) | 24-05-23 | Final plan                                                                    |
+| Doc                                                                                                                              | Published/Last Updated | Purpose                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------------------------|
+| [Web Zero, with m-ld](https://github.com/m-ld/web-zero/wiki/Proposal)                                                            | 01-02-22               | Original Web Zero Proposal                                                    |
+| [Questions](https://github.com/m-ld/web-zero/wiki/Questions)                                                                     | 30-03-22               | Feedback questions on proposal                                                |
+| [Web Zero with RDFa “Spec”](https://github.com/m-ld/web-zero/blob/main/spec.md)                                                  | 20-02-23               | Emphasis on Linked Data rather than plain DOM                                 |
+| [Web Zero Demo](https://github.com/m-ld/sustainable-web-apps/wiki/Web-Zero-Demo)                                                 | 21-02-23               | Web Zero 2023 concept (low m-ld specificity)                                  |
+| [Web Zero (without DOM) (WIP).md](https://gist.github.com/Peeja/0212d1a299d78d92ddf3d5563e6bd1f9)                                | 08-03-23               | Justifying framework compatibility instead of DOM manipulation in the project |
+| [Web Zero, with m-ld.delta](https://docs.google.com/document/u/1/d/1DrMr_PI6P81w1spiUDBTkOJGz0bPS2sZIXhCz51p7CE/edit)            | 08-05-23               | Justification change of direction, rolling up parts of 3-5                    |
+| [Sustainable Web Apps, with m-ld.plan](https://docs.google.com/document/u/1/d/17YnR6f8Xp69E09sO3BShSP5H6PXx3sDGNTVxNyvl56s/edit) | 24-05-23               | Final plan                                                                    |
