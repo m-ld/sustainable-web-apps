@@ -1,0 +1,50 @@
+@startuml
+'https://plantuml.com/component-diagram
+skinparam componentStyle rectangle
+
+node "Web Browser" {
+  component "Sustainable\nWeb App" as app #pink
+  component "Collaborative\nWeb Library" as cwl {
+    [Dataset]
+  }
+  frame API {
+    interface "Reactive\nObservable\nQuery" as query
+    interface "Writing\nData" as data
+  }
+
+  database local <<storage>>
+
+  Dataset <--> local
+
+  cwl -- query
+  cwl -- data
+
+  app ..> query
+  app ..> data
+}
+
+cloud CDN {
+  [app origin] as origin
+  note right
+    Serves the static
+    application assets
+  end note
+}
+
+cloud Services {
+    component "Message Delivery" as messaging <<service>>
+    component "Secure Backup" as backup <<optional>> <<service>> {
+      component "Dataset" as gwDataset
+      database "volume or\ndatabase" <<storage>> as gwDb
+      gwDataset <--> gwDb
+    }
+  interface "Linked Data" as dapi <<REST>>
+  backup - dapi
+}
+
+Dataset --> messaging
+gwDataset --> messaging
+
+origin ..> app: HTTP
+
+@enduml

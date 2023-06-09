@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="603px" preserveAspectRatio="none" style="width:782px;height:603px;background:#FFFFFF;" version="1.1" viewBox="0 0 782 603" width="782px" zoomAndPan="magnify"><defs/><g><!--MD5=[4580b62c293d3e8125622e25a17d625f]
+cluster Web Browser--><g id="cluster_Web Browser"><polygon fill="none" points="16,181.1498,26,171.1498,384,171.1498,384,576.1498,374,586.1498,16,586.1498,16,181.1498" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="374" x2="384" y1="181.1498" y2="171.1498"/><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="374" y1="181.1498" y2="181.1498"/><line style="stroke:#181818;stroke-width:1.0;" x1="374" x2="374" y1="181.1498" y2="586.1498"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="93" x="149.5" y="197.685">Web Browser</text></g><!--MD5=[8b7aa8b79f2e21fefe8ba3e6e1eb51b0]
+cluster cwl--><g id="cluster_cwl"><rect fill="none" height="119" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="139" x="211" y="227.1498"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="96" x="232.5" y="242.685">Collaborative</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="85" x="238" y="259.1733">Web Library</text></g><!--MD5=[fac864e77539af95038f0151207ed802]
+cluster API--><g id="cluster_API"><rect fill="none" height="175" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="223" x="40" y="387.1498"/><path d="M74,387.1498 L74,396.6381 L64,406.6381 L40,406.6381 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="24" x="43" y="401.685">API</text></g><!--MD5=[809c8a75e25a5f1203e71bceecf343a3]
+cluster CDN--><g id="cluster_CDN"><path d="M72.3135,26.854 C79.2444,17.9975 85.1516,17.0624 91.6392,27.3025 C96.9082,18.0965 106.0019,18.0159 111.8935,26.5934 C117.2332,15.7056 123.6693,16.6911 131.1298,24.3996 C136.3295,15.5218 144.3336,14.2028 151.111,22.5719 C157.6112,12.1502 164.1145,12.3793 171.0856,22.1051 C175.4523,13.2288 182.4643,12.3626 189.2447,19.3405 C193.9149,7.9109 200.8059,6.5073 209.19,15.7587 C217.749,6 224.8391,8.3371 231.4075,18.032 C237.1678,9.9262 245.6101,11.9793 249.7742,19.8652 C256.9726,11.9181 264.4417,12.8231 268.4829,23.1055 C276.0076,13.2761 284.0754,13.0838 289.8473,24.8403 C296.3975,17.2802 304.3431,15.7141 309.6109,26.2416 C314.8495,16.9154 320.803,17.8948 327.3148,24.8578 C334.6281,16.3785 343.3901,16.4047 347.7626,27.8725 C357.3417,32.8111 358.0039,41.1946 349.8984,48.009 C359.3101,50.3903 360.7132,57.9946 353.6807,64.214 C362.6013,70.2366 364.5905,80.7939 352.6558,85.8276 C360.2668,93.1315 358.9219,100.9386 348.5157,104.1775 C342.4958,112.4122 334.9843,111.2018 330.331,102.6932 C325.3522,113.5297 317.5533,115.336 309.7911,105.4525 C302.9167,117.6187 295.1796,116.1997 287.6242,106.1315 C279.8198,113.4769 273.3376,113.0547 267.9873,103.3115 C264.8857,112.2316 257.284,112.5678 251.2025,106.6919 C243.9378,115.8266 236.3982,113.8129 230.8132,104.8043 C227.1887,115.8397 217.3341,114.664 211.4523,107.162 C204.3325,116.4373 195.4382,115.9853 189.5868,105.7411 C181.9773,114.498 174.856,112.8977 168.752,103.9677 C165.4104,114.6258 156.4662,113.9309 150.5615,106.5527 C142.646,114.9528 136.0357,114.6536 130.4989,104.0425 C124.2172,113.3933 116.92,112.5757 111.9372,102.7831 C106.4064,113.8681 95.7098,115.2888 89.3276,103.6294 C83.3527,113.0419 78.1879,112.7044 72.1418,103.6958 C61.1392,101.0911 59.8067,92.0641 67.3909,84.7889 C56.0848,81.3643 55.3178,71.0637 63.7411,64.1501 C57.144,57.9995 57.9633,50.968 65.9957,46.7086 C58.7429,38.4655 60.1952,28.9332 72.3135,26.854 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="32" x="192" y="44.685">CDN</text></g><!--MD5=[cdfd548b3455e70392372b1f27091970]
+cluster Services--><g id="cluster_Services"><path d="M424.2779,167.504 C436.2483,152.8184 445.7375,155.1628 454.6177,170.6149 C463.3988,156.7903 471.548,159.6591 480.4252,170.5144 C487.7308,157.088 498.7753,156.7098 508.6812,167.4775 C516.5195,154.9697 525.8656,153.4641 534.0275,167.1645 C542.0525,154.5827 551.2424,154.6617 560.7945,165.4124 C571.8476,154.5057 581.8347,152.9794 589.215,169.2528 C596.171,156.0947 607.4385,155.0754 616.1639,167.3802 C624.9292,154.8603 634.0117,155.1237 641.9948,168.1706 C649.8819,153.3102 661.4237,153.6454 671.2736,166.0639 C679.8493,155.5359 687.995,154.3841 695.1323,167.5145 C704.9347,156.6503 717.1435,155.9147 723.3307,171.3855 C734.267,157.0633 747.8053,156.0715 756,174.1498 C758.1569,174.7422 758.5096,176.4155 757.0206,177.9795 C771.6273,185.3376 771.8926,194.2055 759.7383,204.3242 C772.8437,211.4312 773.6511,223.7403 762.0284,232.8337 C774.7539,243.9984 771.95,254.2698 758.8432,262.6774 C769.6908,269.6868 771.6584,277.8222 761.2082,286.9102 C775.5248,293.7045 775.2662,308.1568 762.1407,315.8358 C774.8319,324.2876 773.1327,338.0986 759.4766,344.0639 C772.4375,352.1627 773.461,363.6162 761.207,373.212 C774.7312,381.4332 773.2852,390.292 761.2632,398.5699 C773.3087,407.1579 772.9121,420.6885 760.6385,428.7735 C773.7964,435.8592 773.1144,445.7473 762.2646,454.3588 C775.1263,464.0836 775.0086,477.4251 758.3094,483.0788 C770.6936,491.3406 771.8224,500.222 760.4359,510.3381 C774.9921,519.6329 773.2211,533.8032 757.0447,539.5276 C767.3697,553.9156 766.4776,563.8348 749,571.1498 C751.8365,570.1497 753.7758,570.4711 753.8521,574.0651 C746.3194,587.2411 732.1372,587.0395 724.1631,574.5762 C718.4893,588.9147 708.0181,587.7867 698.7418,578.4433 C689.2175,593.1819 679.9459,594.8262 668.9295,579.9451 C659.7635,593.7114 648.5517,589.7405 642.0557,577.2158 C637.2679,593.2038 627.2344,595.7587 615.7363,583.4592 C605.0918,595.2071 594.878,594.955 586.479,580.9119 C578.4409,592.4139 568.3995,591.7907 561.0244,580.1817 C551.2625,590.0819 543.6316,588.8216 536.7822,576.9401 C528.7283,592.3914 513.1197,592.1232 504.7905,577.2304 C497.8011,589.1452 490.3739,587.8982 481.8416,578.9256 C471.0542,590.1293 462.0856,588.2932 453.7633,575.9821 C436.2601,588.4553 423.4908,583.6319 416,564.1498 C417.1346,563.8297 417.8444,564.337 417.8467,565.5309 C405.2067,556.6364 404.0822,546.7758 418.1048,538.1324 C404.8064,532.0107 404.5467,519.2057 415.9036,511.078 C403.8275,503.1827 402.1528,489.3569 416.55,482.0512 C403.3271,474.7368 403.7972,463.9316 415.5527,455.6728 C399.5981,447.6236 400.7617,434.5281 414.0984,425.0862 C403.3331,415.6856 404.049,405.9986 416.2561,398.4596 C404.5321,393.171 403.6926,381.0485 413.3868,373.3158 C401.9949,364.1201 402.8662,354.3119 414.9,346.4349 C401.6331,335.7961 403.9772,325.4796 418.4142,318.3013 C401.6191,309.3164 403.0632,294.9329 418.1217,285.6625 C406.1641,279.5811 405.0515,272.1789 414.5553,262.7562 C402.8177,250.0215 401.1632,239.4227 419.1889,231.0358 C408.5262,224.6983 406.8862,212.7121 419.9225,207.1009 C401.8766,192.7303 402.0595,178.5173 423,167.1498 C423.6018,166.682 424.0095,166.7689 424.2779,167.504 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="58" x="557" y="185.685">Services</text></g><!--MD5=[257d31108b780615a2c9554bd453d565]
+cluster backup--><g id="cluster_backup"><rect fill="none" height="337" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="146" x="586" y="210.1498"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="71" x="623.5" y="225.685">«optional»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="61" x="628.5" y="242.1733">«service»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="102" x="608" y="258.6616">Secure Backup</text></g><!--MD5=[4541fb81c80c07473fe4b07432ef0971]
+entity app--><g id="elem_app"><rect fill="#FFC0CB" height="52.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="99" x="73.5" y="277.6498"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="83.5" y="301.185">Sustainable</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="83.5" y="317.6733">Web App</text></g><!--MD5=[d4fd26f9614fa07fe76bdcffa998e3d3]
+entity local--><g id="elem_local"><path d="M282,463.1498 C282,453.1498 325,453.1498 325,453.1498 C325,453.1498 368,453.1498 368,463.1498 L368,505.1264 C368,515.1264 325,515.1264 325,515.1264 C325,515.1264 282,515.1264 282,505.1264 L282,463.1498 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M282,463.1498 C282,473.1498 325,473.1498 325,473.1498 C325,473.1498 368,473.1498 368,463.1498 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="66" x="292" y="490.685">«storage»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="309" y="507.1733">local</text></g><!--MD5=[5170fd6c2d91b5bc835e494afce7d545]
+entity Dataset--><g id="elem_Dataset"><rect fill="#F1F1F1" height="36.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="71" x="254.5" y="286.1498"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="264.5" y="309.685">Dataset</text></g><!--MD5=[a096c1983bcf686c95ea726f28f7a0ed]
+entity query--><g id="elem_query"><ellipse cx="102" cy="484.1498" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="63.5" y="514.685">Reactive</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="63.5" y="531.1733">Observable</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="63.5" y="547.6616">Query</text></g><!--MD5=[703ea5a149c5871c74522bf38bdfe548]
+entity data--><g id="elem_data"><ellipse cx="215" cy="484.1498" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="190.5" y="514.685">Writing</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="190.5" y="531.1733">Data</text></g><!--MD5=[02ab48b3985ee383ac7fbb2fd4890895]
+entity origin--><g id="elem_origin"><rect fill="#F1F1F1" height="36.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="91" x="77.5" y="55.6498"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="87.5" y="79.185">app origin</text></g><g id="elem_GMN17"><path d="M203.5,53.1498 L203.5,69.6498 L168.67,73.6498 L203.5,77.6498 L203.5,93.7709 A0,0 0 0 0 203.5,93.7709 L338.5,93.7709 A0,0 0 0 0 338.5,93.7709 L338.5,63.1498 L328.5,53.1498 L203.5,53.1498 A0,0 0 0 0 203.5,53.1498 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M328.5,53.1498 L328.5,63.1498 L338.5,63.1498 L328.5,53.1498 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="209.5" y="70.7182">Serves the static</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="114" x="209.5" y="86.0288">application assets</text></g><!--MD5=[9ae5ad255f6debb40ed35199de901202]
+entity messaging--><g id="elem_messaging"><rect fill="#F1F1F1" height="52.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="137" x="424.5" y="457.6498"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="61" x="462.5" y="481.185">«service»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="434.5" y="497.6733">Message Delivery</text></g><!--MD5=[7354a1c4232ea769ff615c8d0fd225cf]
+entity dapi--><g id="elem_dapi"><ellipse cx="550" cy="304.1498" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="510" y="334.685">Linked Data</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="48" x="526" y="284.1967">«REST»</text></g><!--MD5=[1ae36f5cc8e8cd00c4680376d9b2dae7]
+entity gwDataset--><g id="elem_gwDataset"><rect fill="#F1F1F1" height="36.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="71" x="629.5" y="286.1498"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="639.5" y="309.685">Dataset</text></g><!--MD5=[d8ac9dbbbd15cdc525358aa3658d2d2e]
+entity gwDb--><g id="elem_gwDb"><path d="M618.5,455.1498 C618.5,445.1498 663,445.1498 663,445.1498 C663,445.1498 707.5,445.1498 707.5,455.1498 L707.5,513.6147 C707.5,523.6147 663,523.6147 663,523.6147 C663,523.6147 618.5,523.6147 618.5,513.6147 L618.5,455.1498 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M618.5,455.1498 C618.5,465.1498 663,465.1498 663,465.1498 C663,465.1498 707.5,465.1498 707.5,455.1498 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="66" x="630" y="482.685">«storage»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="628.5" y="499.1733">volume or</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="628.5" y="515.6616">database</text></g><!--MD5=[5fe303911a1cefd914bfffddc4c805fc]
+link Dataset to local--><g id="link_Dataset_local"><path d="M294.38,327.4398 C300.32,357.6398 310.99,411.8998 318.03,447.7198 " fill="none" id="Dataset-local" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="319.04,452.8598,321.2456,443.2611,318.0841,447.9521,313.3932,444.7905,319.04,452.8598" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="293.36,322.2198,291.1544,331.8186,294.3159,327.1276,299.0068,330.2892,293.36,322.2198" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[707745679e7448a56fe9a73a99748bf6]
+link cwl to query--><g id="link_cwl_query"><path d="M221.704,346.3843 C221.6261,346.7631 221.5441,347.1409 221.4579,347.5176 C221.2855,348.2709 221.0963,349.0195 220.8891,349.7621 C220.4748,351.2471 219.9888,352.7078 219.4228,354.1322 C218.2908,356.9809 216.8388,359.6848 215,362.1498 C201.21,380.6198 184.15,364.9398 166,379.1498 C132.12,405.6898 111.73,455.5298 104.74,475.0398 " fill="none" id="cwl-query" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[9d7024f8038203e741773af063e50a35]
+link cwl to data--><g id="link_cwl_data"><path d="M218.072,346.4089 C218.0663,346.6639 218.0605,346.9197 218.0548,347.1761 C218.0432,347.6891 218.0316,348.2049 218.0199,348.7236 C217.9966,349.7609 217.973,350.8094 217.9492,351.8684 C217.7586,360.3401 217.5531,369.4777 217.3425,378.8486 C216.5,416.3323 215.575,457.5498 215.19,474.8198 " fill="none" id="cwl-data" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d200737cc0ecbdaac7acf85af707211d]
+link app to query--><g id="link_app_query"><path d="M119.99,330.6498 C115.46,369.0198 107.06,440.2498 103.58,469.7798 " fill="none" id="app-to-query" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="102.99,474.7998,108.0156,466.3297,103.575,469.8342,100.0705,465.3936,102.99,474.7998" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[4b92f26e7f06ea4ee51ed9ec96e4d4f8]
+link app to data--><g id="link_app_data"><path d="M138.68,330.8698 C147.08,344.9598 157.44,362.8398 166,379.1498 C182.93,411.4098 200.63,450.5398 209.39,470.3398 " fill="none" id="app-to-data" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="211.42,474.9398,211.4628,465.0911,209.4092,470.362,204.1382,468.3084,211.42,474.9398" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[81032b8b2e899ba63c26874519a2f218]
+link gwDataset to gwDb--><g id="link_gwDataset_gwDb"><path d="M664.75,327.4398 C664.43,355.5198 663.88,404.3898 663.49,439.8998 " fill="none" id="gwDataset-gwDb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="663.43,445.0398,667.5326,436.0861,663.4871,440.0402,659.5331,435.9947,663.43,445.0398" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="664.81,322.2198,660.7074,331.1736,664.7529,327.2195,668.7069,331.265,664.81,322.2198" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[28fbda790cd8cf689a141124c76591ab]
+link backup to dapi--><g id="link_backup_dapi"><path d="M585.9841,304.1498 C585.628,304.1498 585.272,304.1498 584.9159,304.1498 C582.0675,304.1498 579.2188,304.1498 576.37,304.1498 C570.6725,304.1498 564.975,304.1498 559.28,304.1498 " fill="none" id="backup-dapi" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[258da4038d6c8812c740288592c0f1ce]
+link Dataset to messaging--><g id="link_Dataset_messaging"><path d="M317.79,322.2798 C337.07,334.6698 362.98,352.2898 384,370.1498 C414.63,396.1698 446.15,429.7098 467.36,453.4698 " fill="none" id="Dataset-to-messaging" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="470.93,457.4998,467.9582,448.1101,467.6153,453.7565,461.9688,453.4136,470.93,457.4998" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[80a3c5cbb5457504f7afc5d7b75be6d4]
+link gwDataset to messaging--><g id="link_gwDataset_messaging"><path d="M655.49,322.2798 C648.33,334.2598 637.77,350.1798 626,362.1498 C616.83,371.4698 612.09,370.8398 602,379.1498 C573.38,402.7298 543.02,432.0998 521.63,453.5998 " fill="none" id="gwDataset-to-messaging" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="518.01,457.2598,527.1881,453.6873,521.5312,453.7101,521.5084,448.0533,518.01,457.2598" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c080b03a590b10f00d095053c07a15c8]
+link origin to app--><g id="link_origin_app"><path d="M123,91.8198 C123,130.2798 123,223.7398 123,272.4598 " fill="none" id="origin-to-app" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="123,277.5998,127,268.5998,123,272.5998,119,268.5998,123,277.5998" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="33" x="124" y="139.7182">HTTP</text></g><!--MD5=[8289393b52e71f457b409e380fb9edbd]
+@startuml
+'https://plantuml.com/component-diagram
+skinparam componentStyle rectangle
+
+node "Web Browser" {
+  component "Sustainable\nWeb App" as app #pink
+  component "Collaborative\nWeb Library" as cwl {
+    [Dataset]
+  }
+  frame API {
+    interface "Reactive\nObservable\nQuery" as query
+    interface "Writing\nData" as data
+  }
+
+  database local <<storage>>
+
+  Dataset <- -> local
+
+  cwl - - query
+  cwl - - data
+
+  app ..> query
+  app ..> data
+}
+
+cloud CDN {
+  [app origin] as origin
+  note right
+    Serves the static
+    application assets
+  end note
+}
+
+cloud Services {
+    component "Message Delivery" as messaging <<service>>
+    component "Secure Backup" as backup <<optional>> <<service>> {
+      component "Dataset" as gwDataset
+      database "volume or\ndatabase" <<storage>> as gwDb
+      gwDataset <- -> gwDb
+    }
+  interface "Linked Data" as dapi <<REST>>
+  backup - dapi
+}
+
+Dataset - -> messaging
+gwDataset - -> messaging
+
+origin ..> app: HTTP
+
+@enduml
+
+@startuml
+skinparam componentStyle rectangle
+
+node "Web Browser" {
+  component "Sustainable\nWeb App" as app #pink
+  component "Collaborative\nWeb Library" as cwl {
+    [Dataset]
+  }
+  frame API {
+    interface "Reactive\nObservable\nQuery" as query
+    interface "Writing\nData" as data
+  }
+
+  database local <<storage>>
+
+  Dataset <- -> local
+
+  cwl - - query
+  cwl - - data
+
+  app ..> query
+  app ..> data
+}
+
+cloud CDN {
+  [app origin] as origin
+  note right
+    Serves the static
+    application assets
+  end note
+}
+
+cloud Services {
+    component "Message Delivery" as messaging <<service>>
+    component "Secure Backup" as backup <<optional>> <<service>> {
+      component "Dataset" as gwDataset
+      database "volume or\ndatabase" <<storage>> as gwDb
+      gwDataset <- -> gwDb
+    }
+  interface "Linked Data" as dapi <<REST>>
+  backup - dapi
+}
+
+Dataset - -> messaging
+gwDataset - -> messaging
+
+origin ..> app: HTTP
+
+@enduml
+
+PlantUML version 1.2022.8(Sun Sep 25 10:00:33 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

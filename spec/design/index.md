@@ -1,5 +1,7 @@
 # contents
 
 1. [Prior Art](prior-art.md)
-2. [Project Hypothesis](hypothesis.md)
-3. [API](api.md)
+2. [Hypothesis](hypothesis.md)
+3. [Project Approach](approach.md)
+4. [Architecture](architecture.md)
+5. [API](xql.md)

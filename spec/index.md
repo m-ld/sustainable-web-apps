@@ -5,8 +5,10 @@
 3. [Sustainability for Web Apps](sustainability.md)
 4. Technical Design
    1. [Prior Art](design/prior-art.md)
-   2. [Project Hypothesis](design/hypothesis.md)
-   3. [API](design/api.md)
+   2. [Hypothesis](design/hypothesis.md)
+   3. [Project Approach](design/approach.md)
+   4. [Architecture](design/architecture.md)
+   5. [API](design/xql.md)
 
 # introduction
 

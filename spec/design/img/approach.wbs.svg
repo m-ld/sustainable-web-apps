@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="438px" preserveAspectRatio="none" style="width:763px;height:438px;background:#FFFFFF;" version="1.1" viewBox="0 0 763 438" width="763px" zoomAndPan="magnify"><defs/><g><line style="stroke:#181818;stroke-width:1.5;" x1="55.5" x2="55.5" y1="64.1328" y2="84.1328"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="91" x="10" y="84.1328"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="71" x="20" y="105.7344">Specification</text><line style="stroke:#181818;stroke-width:1.5;" x1="55.5" x2="65.5" y1="150.332" y2="150.332"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="79" x="65.5" y="133.2656"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="59" x="75.5" y="154.8672">use-cases</text><line style="stroke:#181818;stroke-width:1.5;" x1="55.5" x2="65.5" y1="206.5313" y2="206.5313"/><rect fill="#F1F1F1" height="48.2656" style="stroke:#181818;stroke-width:1.5;" width="102" x="65.5" y="182.3984"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="68" x="75.5" y="204">definition of</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="82" x="75.5" y="218.1328">"sustainability"</text><line style="stroke:#181818;stroke-width:1.5;" x1="55.5" x2="65.5" y1="262.7305" y2="262.7305"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="81" x="65.5" y="245.6641"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="61" x="75.5" y="267.2656">hypothesis</text><line style="stroke:#181818;stroke-width:1.5;" x1="55.5" x2="65.5" y1="311.8633" y2="311.8633"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="75" x="65.5" y="294.7969"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="55" x="75.5" y="316.3984">approach</text><line style="stroke:#181818;stroke-width:1.5;" x1="55.5" x2="65.5" y1="360.9961" y2="360.9961"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="88" x="65.5" y="343.9297"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="68" x="75.5" y="365.5313">architecture</text><line style="stroke:#181818;stroke-width:1.5;" x1="55.5" x2="65.5" y1="410.1289" y2="410.1289"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="86" x="65.5" y="393.0625"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="66" x="75.5" y="414.6641">api designs</text><line style="stroke:#181818;stroke-width:1.5;" x1="55.5" x2="55.5" y1="118.2656" y2="410.1289"/><line style="stroke:#181818;stroke-width:1.5;" x1="212" x2="212" y1="64.1328" y2="84.1328"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="49" x="187.5" y="84.1328"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="29" x="197.5" y="105.7344">m-ld</text><line style="stroke:#181818;stroke-width:1.5;" x1="212" x2="222" y1="150.332" y2="150.332"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="83" x="222" y="133.2656"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="63" x="232" y="154.8672">Text CRDT</text><line style="stroke:#181818;stroke-width:1.5;" x1="212" x2="222" y1="206.5313" y2="206.5313"/><rect fill="#F1F1F1" height="48.2656" style="stroke:#181818;stroke-width:1.5;" width="106" x="222" y="182.3984"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="86" x="232" y="204">SHACL support</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="75" x="232" y="218.1328">(as required)</text><line style="stroke:#181818;stroke-width:1.5;" x1="212" x2="222" y1="262.7305" y2="262.7305"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="69" x="222" y="245.6641"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="49" x="232" y="267.2656">Gateway</text><line style="stroke:#181818;stroke-width:1.5;" x1="212" x2="212" y1="118.2656" y2="262.7305"/><line style="stroke:#181818;stroke-width:1.5;" x1="432" x2="432" y1="64.1328" y2="84.1328"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="168" x="348" y="84.1328"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="148" x="358" y="105.7344">Collaborative Web Library</text><line style="stroke:#181818;stroke-width:1.5;" x1="432" x2="442" y1="150.332" y2="150.332"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="176" x="442" y="133.2656"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="156" x="452" y="154.8672">Reactive Observable Query</text><line style="stroke:#181818;stroke-width:1.5;" x1="432" x2="442" y1="199.4648" y2="199.4648"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="90" x="442" y="182.3984"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="70" x="452" y="204">Writing Data</text><line style="stroke:#181818;stroke-width:1.5;" x1="432" x2="442" y1="248.5977" y2="248.5977"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="130" x="442" y="231.5313"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="110" x="452" y="253.1328">Typescript support</text><line style="stroke:#181818;stroke-width:1.5;" x1="432" x2="442" y1="297.7305" y2="297.7305"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="113" x="442" y="280.6641"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="93" x="452" y="302.2656">Security support</text><line style="stroke:#181818;stroke-width:1.5;" x1="432" x2="442" y1="346.8633" y2="346.8633"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="138" x="442" y="329.7969"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="118" x="452" y="351.3984">Text Editing support</text><line style="stroke:#181818;stroke-width:1.5;" x1="432" x2="432" y1="118.2656" y2="346.8633"/><line style="stroke:#181818;stroke-width:1.5;" x1="695" x2="695" y1="64.1328" y2="84.1328"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="114" x="638" y="84.1328"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="94" x="648" y="105.7344">Demo &amp; Tutorial</text><line style="stroke:#181818;stroke-width:1.5;" x1="55.5" x2="695" y1="64.1328" y2="64.1328"/><rect fill="#F1F1F1" height="34.1328" style="stroke:#181818;stroke-width:1.5;" width="148" x="301.25" y="10"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="128" x="311.25" y="31.6016">Sustainable Web Apps</text><line style="stroke:#181818;stroke-width:1.5;" x1="375.25" x2="375.25" y1="44.1328" y2="64.1328"/><!--MD5=[6dcf7474628f050951373a4766e752b5]
+@startwbs
+'https://plantuml.com/wbs-diagram
+
+* Sustainable Web Apps
+** Specification
+*** use-cases
+*** definition of\n"sustainability"
+*** hypothesis
+*** approach
+*** architecture
+*** api designs
+** m-ld
+*** Text CRDT
+*** SHACL support\n(as required)
+*** Gateway
+** Collaborative Web Library
+*** Reactive Observable Query
+*** Writing Data
+*** Typescript support
+*** Security support
+*** Text Editing support
+** Demo & Tutorial
+@endwbs
+
+@startwbs
+
+* Sustainable Web Apps
+** Specification
+*** use-cases
+*** definition of\n"sustainability"
+*** hypothesis
+*** approach
+*** architecture
+*** api designs
+** m-ld
+*** Text CRDT
+*** SHACL support\n(as required)
+*** Gateway
+** Collaborative Web Library
+*** Reactive Observable Query
+*** Writing Data
+*** Typescript support
+*** Security support
+*** Text Editing support
+** Demo & Tutorial
+@endwbs
+
+PlantUML version 1.2022.8(Sun Sep 25 10:00:33 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>
