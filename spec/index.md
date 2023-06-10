@@ -8,7 +8,8 @@
    2. [Hypothesis](design/hypothesis.md)
    3. [Project Approach](design/approach.md)
    4. [Architecture](design/architecture.md)
-   5. [API](design/xql.md)
+   5. [Query API](design/xql.md)
+   6. [Text API](design/text-api.md)
 
 # introduction
 
