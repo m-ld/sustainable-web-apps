@@ -13,7 +13,8 @@
 
 # introduction
 
-Goal: to encourage and support the development of Healthy Web Apps, defined by:
+Goal: to encourage and support the development of Sustainable Web Apps, defined
+by:
 
 - No lock-in
 - No attention theft
@@ -22,7 +23,7 @@ Goal: to encourage and support the development of Healthy Web Apps, defined by:
 So, why do people keep building apps which lock users in and keep control over
 their users' personal data? We see two reasons.
 
-First: there is an economic incentive to developing unhealthy apps. Data is
+First: there is an economic incentive to developing unsustainable apps. Data is
 valuable, and companies who produce applications would prefer to have access to
 as much of it as possible. Active users are valuable, as they produce valuable
 data, and are also available to target with another revenue source, advertising.
@@ -35,7 +36,7 @@ of those which treat them better, and to do that, there must be alternatives
 available to move _to_.
 
 Thus the second reason: there is a technological disincentive to developing
-healthy apps. It's simply much easier to develop an application in which
+sustainable apps. It's simply much easier to develop an application in which
 everyone's data is centralized in a database under the application developer's
 control. Exposing that data via some sort of API is a good deal of extra effort
 that can be hard to justify. Interchanging data with other applications, to the
@@ -43,7 +44,7 @@ point of eliminating lock-in, is even harder to justify, as it both gives users
 a route to leave the application _and_ is even harder to build than simply
 exposing the data in some ad-hoc format.
 
-We know there are people interested in developing healthy apps because they
+We know there are people interested in developing sustainable apps because they
 currently do so, even in the face of technological difficulty. The entire Solid
 project is evidence of this. We have a great deal of respect for Solid and its
 approach, and draw inspiration from it. However, we believe it doesn't provide
@@ -71,7 +72,7 @@ a Solid app, they can also bring their own Gateways to these collaborative apps.
 # background (how we got here)
 
 | Doc                                                                                                                              | Published/Last Updated | Purpose                                                                       |
-|----------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------------------------|
+| -------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------- |
 | [Web Zero, with m-ld](https://github.com/m-ld/web-zero/wiki/Proposal)                                                            | 01-02-22               | Original Web Zero Proposal                                                    |
 | [Questions](https://github.com/m-ld/web-zero/wiki/Questions)                                                                     | 30-03-22               | Feedback questions on proposal                                                |
 | [Web Zero with RDFa “Spec”](https://github.com/m-ld/web-zero/blob/main/spec.md)                                                  | 20-02-23               | Emphasis on Linked Data rather than plain DOM                                 |
