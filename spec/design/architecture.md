@@ -6,7 +6,7 @@ Based on our [hypothesis](hypothesis.md), this is how we see a sustainable web a
 
 ![architecture components](img/architecture.component.svg)
 
-- The Javascript code and other static assets of the Sustainable Web App (the _app_, in pink) are served from some origin via HTTP.
+- The JavaScript code and other static assets of the Sustainable Web App (the _app_, in pink) are served from some origin via HTTP.
 - The app establishes a working Dataset, comprised of _semantic web_ data (not being too specific yet as to serialisation).
 - The Dataset is stored locally, and so is available without a network round-trip (unless it has to be fetched to get started!). It is _local-first_.
 - If other replicas of the Dataset exist elsewhere, they are synchronised, when the network is available, via a Message Delivery service.

@@ -44,7 +44,7 @@ We will implement an interface which exposes the results of a useful query over 
 
 We will develop simple API patterns for multi-collaborator writing to the dataset from the applications.
 
-### Typescript Support
+### TypeScript Support
 
 We will develop and demonstrate patterns for using design-time application data types in the collaborative web library. We will offer patterns and tools to make this suitably ergonomic for an application using the Observables and hooks described above.
 
