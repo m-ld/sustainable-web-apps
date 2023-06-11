@@ -276,7 +276,8 @@ subgraph of the original data.
 
 ### Reactive Updates
 
-With pure RxJS observables:
+Using pure RxJS observables, we can observe a query and subscribe to the
+results:
 
 ```ts
 const result$ = observeQuery({
@@ -292,80 +293,90 @@ const result$ = observeQuery({
 });
 
 result$.subscribe((result) => {
-  console.log("Got result:", result);
+  // Do something with the result
 });
+```
 
-// Console: Got result: {
-//   "@context": { "@vocab": "http://swapi.dev/documentation#" },
-//   "@graph": [
-//     {
-//       "@id": "https://swapi.dev/api/people/1/",
-//       "@type": "Person",
-//       "hair_color": "blond",
-//       "name": { "@value": "Luke Skywalker", "@strends": " Skywalker" }
-//     },
-//     {
-//       "@id": "https://swapi.dev/api/people/11/",
-//       "@type": "Person",
-//       "hair_color": "blond",
-//       "name": { "@value": "Anakin Skywalker", "@strends": " Skywalker" }
-//     },
-//     {
-//       "@id": "https://swapi.dev/api/people/43/",
-//       "@type": "Person",
-//       "hair_color": "black",
-//       "name": { "@value": "Shmi Skywalker", "@strends": " Skywalker" }
-//     }
-//   ]
-// }
+The query is executed immediately, and the observer receives the result
+(asynchronously, because reading from the graph is itself always async):
 
-// Either locally or remotely, the `hair_color` of
-// `https://swapi.dev/api/people/1/` is changed to "ash-brown".
+```json
+{
+  "@context": { "@vocab": "http://swapi.dev/documentation#" },
+  "@graph": [
+    {
+      "@id": "https://swapi.dev/api/people/1/",
+      "@type": "Person",
+      "hair_color": "blond",
+      "name": { "@value": "Luke Skywalker", "@strends": " Skywalker" }
+    },
+    {
+      "@id": "https://swapi.dev/api/people/11/",
+      "@type": "Person",
+      "hair_color": "blond",
+      "name": { "@value": "Anakin Skywalker", "@strends": " Skywalker" }
+    },
+    {
+      "@id": "https://swapi.dev/api/people/43/",
+      "@type": "Person",
+      "hair_color": "black",
+      "name": { "@value": "Shmi Skywalker", "@strends": " Skywalker" }
+    }
+  ]
+}
+```
 
-// Console: Got result: {
-//   "@context": { "@vocab": "http://swapi.dev/documentation#" },
-//   "@graph": [
-//     {
-//       "@id": "https://swapi.dev/api/people/1/",
-//       "@type": "Person",
-//       "hair_color": "ash-brown",
-//       "name": { "@value": "Luke Skywalker", "@strends": " Skywalker" }
-//     },
-//     {
-//       "@id": "https://swapi.dev/api/people/11/",
-//       "@type": "Person",
-//       "hair_color": "blond",
-//       "name": { "@value": "Anakin Skywalker", "@strends": " Skywalker" }
-//     },
-//     {
-//       "@id": "https://swapi.dev/api/people/43/",
-//       "@type": "Person",
-//       "hair_color": "black",
-//       "name": { "@value": "Shmi Skywalker", "@strends": " Skywalker" }
-//     }
-//   ]
-// }
+Next, either locally or remotely, the `hair_color` of
+`https://swapi.dev/api/people/1/` is changed to "ash-brown". The observable
+reacts, and emits a new result:
 
-// Either locally or remotely, the name of `https://swapi.dev/api/people/11/`
-// is changed to "Darth Vader".
+```json
+{
+  "@context": { "@vocab": "http://swapi.dev/documentation#" },
+  "@graph": [
+    {
+      "@id": "https://swapi.dev/api/people/1/",
+      "@type": "Person",
+      "hair_color": "ash-brown",
+      "name": { "@value": "Luke Skywalker", "@strends": " Skywalker" }
+    },
+    {
+      "@id": "https://swapi.dev/api/people/11/",
+      "@type": "Person",
+      "hair_color": "blond",
+      "name": { "@value": "Anakin Skywalker", "@strends": " Skywalker" }
+    },
+    {
+      "@id": "https://swapi.dev/api/people/43/",
+      "@type": "Person",
+      "hair_color": "black",
+      "name": { "@value": "Shmi Skywalker", "@strends": " Skywalker" }
+    }
+  ]
+}
+```
 
-// Console: Got result: {
-//   "@context": { "@vocab": "http://swapi.dev/documentation#" },
-//   "@graph": [
-//     {
-//       "@id": "https://swapi.dev/api/people/1/",
-//       "@type": "Person",
-//       "hair_color": "ash-brown",
-//       "name": { "@value": "Luke Skywalker", "@strends": " Skywalker" }
-//     },
-//     {
-//       "@id": "https://swapi.dev/api/people/43/",
-//       "@type": "Person",
-//       "hair_color": "black",
-//       "name": { "@value": "Shmi Skywalker", "@strends": " Skywalker" }
-//     }
-//   ]
-// }
+Then, the name of `https://swapi.dev/api/people/11/` is changed to "Darth
+Vader". Again, the observable reacts, and emits:
+
+```json
+{
+  "@context": { "@vocab": "http://swapi.dev/documentation#" },
+  "@graph": [
+    {
+      "@id": "https://swapi.dev/api/people/1/",
+      "@type": "Person",
+      "hair_color": "ash-brown",
+      "name": { "@value": "Luke Skywalker", "@strends": " Skywalker" }
+    },
+    {
+      "@id": "https://swapi.dev/api/people/43/",
+      "@type": "Person",
+      "hair_color": "black",
+      "name": { "@value": "Shmi Skywalker", "@strends": " Skywalker" }
+    }
+  ]
+}
 ```
 
 Note that `observeQuery()` as proposed here must already have some awareness of
