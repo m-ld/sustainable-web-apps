@@ -1,6 +1,6 @@
 # use-cases
 
-Our project narrative intentionally encompasses a very wide range of end-user use-cases. We want to show that no compromise is necessary in building a '[sustainable](sustainability.md)' app versus building an unsustainable one, for a large set of them.
+Our project narrative intentionally encompasses a wide range of end-user use-cases. We want to show that no compromise is necessary in building a '[sustainable](sustainability.md)' app versus building an unsustainable one, for a large set of them.
 
 However, we are clearly not going to demonstrate radical improvements to every possible web app. So actually, our 'users' are the engineers who build those apps. We look at use-cases not only from the end-user perspective but also from the engineer perspective, to motivate our design hypothesis. In the context of this project, we especially want to consider cases that we can usefully demonstrate, taking the role of application developers ourselves; and still give confidence that the solution will scale to production features and workloads.
 
