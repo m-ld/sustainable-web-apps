@@ -22,8 +22,6 @@ Finally, semantic web technologies do not inherently address security concerns. 
 
 With "personal data stores", individuals have control over their own personal data by storing it in a secure and private repository under their ownership and management. This approach aims to address concerns related to data privacy, security, and user control.
 
-![A representation of a Personal Data Store](https://www.researchgate.net/profile/Riccardo-Guidotti/publication/283515263/figure/fig2/AS:292837956173825@1446829417238/A-representation-of-a-Personal-Data-Store-where-different-kinds-of-personal-data-are.png)
-
 Apps based on personal data stored give the user the freedom to switch between different apps or services without losing access to their valuable information. In practice, this also requires that the different apps can read (and maybe write) each other's data; to solve this, personal data stores must be combined with other approaches such as the semantic web.
 
 While the concept of personal data stores primarily focuses on data ownership and control rather than user interfaces, it aligns with the principle of no attention theft indirectly. By enabling individuals to manage their personal data but switch apps at will, personal data stores empower users to have more control over their attention and limit the potential for attention-stealing practices.

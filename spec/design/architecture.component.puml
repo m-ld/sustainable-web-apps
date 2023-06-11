@@ -5,45 +5,47 @@ skinparam componentStyle rectangle
 node "Web Browser" {
   component "Sustainable\nWeb App" as app #pink
   component "Collaborative\nWeb Library" as cwl {
-    [Dataset]
-  }
-  frame API {
-    interface "Reactive\nObservable\nQuery" as query
-    interface "Writing\nData" as data
+    [Graph]
+    frame API {
+      interface "Reactive\nObservable\nQuery" as query
+      interface "Writing\nData" as data
+    }
   }
 
   database local <<storage>>
 
-  Dataset <--> local
+  Graph <--> local
 
-  cwl -- query
-  cwl -- data
-
-  app ..> query
-  app ..> data
+  app --> query
+  app --> data
 }
 
 cloud CDN {
   [app origin] as origin
-  note right
+  note left
     Serves the static
     application assets
   end note
 }
 
-cloud Services {
-    component "Message Delivery" as messaging <<service>>
-    component "Secure Backup" as backup <<optional>> <<service>> {
-      component "Dataset" as gwDataset
-      database "volume or\ndatabase" <<storage>> as gwDb
-      gwDataset <--> gwDb
-    }
-  interface "Linked Data" as dapi <<REST>>
-  backup - dapi
+cloud "Message Delivery" as messaging <<service>>
+
+interface "Linked Data" as dapi <<REST>>
+
+cloud {
+  component "Secure Backup" as backup <<optional>> <<service>> {
+    component "Graph" as gwGraph
+    database "volume or\ndatabase" <<storage>> as gwDb
+    gwGraph <--> gwDb
+  }
+  backup -- dapi
 }
 
-Dataset --> messaging
-gwDataset --> messaging
+[other collaborators...] as others
+
+Graph --> messaging
+gwGraph --> messaging
+others --> messaging
 
 origin ..> app: HTTP
 

@@ -22,7 +22,7 @@ As you can read in the [architecture](architecture.md), we want to layer our imp
 
 ### Text CRDT
 
-All our analysed [use-cases](../use-cases.md) involve editable text, and since we want to support live collaboration, that text generally needs to be editable by multiple users at the same time. We're going to build support for an [embedded text CRDT in **m-ld**](https://github.com/m-ld/m-ld-spec/issues/35). More generally, we will allow an application using **m-ld** to choose an appropriate data type for any given value in the dataset, such as binary when storing image data.
+All our analysed [use-cases](../use-cases.md) involve editable text, and since we want to support live collaboration, that text generally needs to be editable by multiple users at the same time. We're going to build support for an [embedded text CRDT in **m-ld**](https://github.com/m-ld/m-ld-spec/issues/35). More generally, we will allow an application using **m-ld** to choose an appropriate data type for any given value in the Linked Data graph, such as binary when storing image data.
 
 ### SHACL support
 
@@ -38,11 +38,11 @@ We will develop a developer-friendly solution for developing highly-interactive 
 
 ### Reactive Observable Query
 
-We will implement an interface which exposes the results of a useful query over a Linked Data dataset as an RxJS Observable, suitable for any reactive application to subscribe to.
+We will implement an interface which exposes the results of a useful query over a Linked Data graph as an RxJS Observable, suitable for any reactive application to subscribe to.
 
 ### Writing Data
 
-We will develop simple API patterns for multi-collaborator writing to the dataset from the applications.
+We will develop simple API patterns for multi-collaborator writing to the Linked Data graph from the applications.
 
 ### TypeScript Support
 

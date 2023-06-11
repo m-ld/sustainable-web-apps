@@ -205,7 +205,7 @@ In alignment with the principle of decentralised extensibility, it should be pos
 
 The latter option is complicated by the fact that during update processing, the local engine may not have knowledge of the `@type` of every Subject being updated; and further, the type might even be changing concurrently.
 
-Initially, therefore, we will allow for options 1 & 2 in our implementation. Declaring the CRDT algorithm will follow the normal pattern for [**m-ld** Extensions [14]](https://js.m-ld.org/#extensions), by writing the declaration to the dataset, e.g.
+Initially, therefore, we will allow for options 1 & 2 in our implementation. Declaring the CRDT algorithm will follow the normal pattern for [**m-ld** Extensions [14]](https://js.m-ld.org/#extensions), by writing the declaration to the graph, e.g.
 
 ```json
 {
