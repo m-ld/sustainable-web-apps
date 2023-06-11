@@ -682,7 +682,7 @@ will display the docstrings given for each of them. (It would be preferable to
 display a docstring defined within `PropertyTypes`, but unfortunately [this is
 not currently possible in
 TypeScript](https://github.com/microsoft/TypeScript/issues/50715). If this issue
-is resolved, however, we will be able to add that ability.) possible.]
+is resolved, however, we will be able to add that ability.) possible.
 
 JSON-LD contexts propagate to child nodes, and these types propagate in the same
 way. Thus:
