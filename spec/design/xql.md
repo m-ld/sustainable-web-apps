@@ -418,9 +418,9 @@ const Skywalkers = () => {
 In React, the `useQuery` hook is little more than a wrapper around
 `observeQuery`. It simply returns each result emitted from the observable,
 causing the component to re-render with new data. If we'd prefer the list items
-to be their own component, we have two choices. In one approach∑∑, we can
-declare `Person` to take `name` and `hair_color`, which ensures that
-`Skywalkers` fetches those values and passes them along:
+to be their own component, we have two choices. In one approach, we can declare
+`Person` to take `name` and `hair_color`, which ensures that `Skywalkers`
+fetches those values and passes them along:
 
 ```tsx
 const Person = ({
