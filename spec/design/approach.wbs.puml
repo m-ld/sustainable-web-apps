@@ -1,0 +1,23 @@
+@startwbs
+'https://plantuml.com/wbs-diagram
+
+* Sustainable Web Apps
+** Specification
+*** use-cases
+*** definition of\n"sustainability"
+*** hypothesis
+*** approach
+*** architecture
+*** api designs
+** m-ld
+*** Text CRDT
+*** SHACL support\n(as required)
+*** Gateway
+** Collaborative Web Library
+*** Reactive Observable Query
+*** Writing Data
+*** TypeScript support
+*** Security support
+*** Text Editing support
+** Demo & Tutorial
+@endwbs
