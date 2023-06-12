@@ -6,6 +6,16 @@ However, we are clearly not going to demonstrate radical improvements to every p
 
 The following use-cases are primarily drawn from the personal experience of the project team, both as users and as engineers.
 
+### terminology
+
+In the following we make use of software engineering terms, intending their usual meaning. Here are some definitions of the more esoteric ones:
+
+| term                      | meaning                                                                                                                  |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| partially structured data | data whose structure is at least partially described in a data model, which may be abstract with respect to some content |
+| variety (big data axis)   | an abstract expression of the diversity of data types and relationships in data, and how frequently these can change     |
+| veracity (big data axis)  | an abstract expression of the quality of data, including its precision and accuracy                                      |
+
 ## Project Management
 
 "As a project manager, I want to facilitate real-time collaboration on project planning and tracking, enabling team members to update tasks, dependencies, and progress in real-time, so that everyone is on the same page."
@@ -19,7 +29,7 @@ The following use-cases are primarily drawn from the personal experience of the 
 
 ### Engineering Challenges
 
-1. Project management information is an example of semi-structured data with significant requirements on the variety and veracity 'big data' axes:
+1. Project management information is an example of partially structured data with significant requirements on the variety and veracity 'big data' axes:
    - Combination of strictly typed and controlled fields and forms, with free-form rich text
    - Business process management features such as workflow
    - Significant desire to tailor the above based on context and project needs
@@ -48,7 +58,7 @@ It should be sufficient to demonstrate that an application structured like this 
 
 ### Engineering Challenges
 
-1. Notes are an example of semi-structured data with significant requirements on the variety and veracity 'big data' axes:
+1. Notes are an example of partially structured data with significant requirements on the variety and veracity 'big data' axes:
    - Primarily free-form rich text, but with additional requirements for commenting, tagging, categorising, citing and linking, where such metadata may need to be structured to conform to the thought-worker's or their organisation's controlled vocabularies.
    - Links to other systems such as Data Analytics, Document Management, Project Management; including import and export as well as referencing.
 2. Features tend to have been added ad-hoc during the product's lifecycle, resulting in significant technical debt.
@@ -72,7 +82,7 @@ The essence of note-taking is sufficiently straightforward that it is frequently
 
 ## Engineering Challenges
 
-1. Experimental data are an example of semi-structured data with significant requirements on the variety and veracity 'big data' axes:
+1. Experimental data are an example of partially structured data with significant requirements on the variety and veracity 'big data' axes:
    - Primarily highly-structured text and numerical data, according to pre-defined standard templates, often modified, and also often not used due to the novelty of the science (but the data is still structured!).
    - Additional requirements for commenting, tagging against controlled vocabularies, and audit logging including electronic signatures.
    - Links to other systems such as Data Analysis, equipment controllers, Lab Informatics including Inventory Systems; including import and export as well as referencing.

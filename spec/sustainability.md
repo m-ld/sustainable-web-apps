@@ -2,13 +2,13 @@
 
 Our goal is to encourage and support the development of **Sustainable Web Apps**.
 
-For an app to be 'sustainable' we mean that on the one hand, it avoids unhealthy trends in the app development industry. It demonstrates:
+For an app to be 'sustainable' we mean that on the one hand, it avoids **unhealthy trends** in the app development industry. It demonstrates:
 
 - No lock-in
 - No attention theft
 - Retention of control over personal data
 
-On the other hand, it does follow healthy trends which help users, and are coming to be expected:
+On the other hand, it does follow **healthy trends** which help users, and are coming to be expected:
 
 - Live collaboration
 - Linking of data between applications
@@ -18,7 +18,7 @@ We have arrived at these principles from analysis of the [use-cases](use-cases.m
 
 ## no lock-in
 
-No lock-in means that users are not tied to a specific platform or ecosystem. They have the freedom to migrate their data and switch to alternative solutions without losing valuable information or being dependent on a single provider. This promotes user autonomy and flexibility in choosing the tools that best fit their needs.
+No lock-in means that users are not tied to a specific platform or ecosystem, choosing the tools that best fit their needs and being independent of any single provider. They have the freedom and autonomy to take _their data_ to alternative solutions without losing anything. Sustainable apps are built in such a way as to make this the _normal_ behaviour.
 
 ## no attention theft
 

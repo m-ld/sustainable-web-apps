@@ -13,15 +13,17 @@
 
 # introduction
 
-Goal: to encourage and support the development of Sustainable Web Apps, defined
-by:
+Our goal in this project is to encourage and support the development of
+Sustainable Web Apps.
+
+These are [apps which express](sustainability.md):
 
 - No lock-in
 - No attention theft
 - Retention of control over personal data
 
-So, why do people keep building apps which lock users in and keep control over
-their users' personal data? We see two reasons.
+But why do so many existing apps lock-in their users and their attention, and
+keep control over their users' personal data? We see two reasons.
 
 First: there is an economic incentive to developing unsustainable apps. Data is
 valuable, and companies who produce applications would prefer to have access to
@@ -35,7 +37,7 @@ their needs known is to actually leave the services they disagree with in favor
 of those which treat them better, and to do that, there must be alternatives
 available to move _to_.
 
-Thus the second reason: there is a technological disincentive to developing
+Thus, the second reason: there is a technological disincentive to developing
 sustainable apps. It's simply much easier to develop an application in which
 everyone's data is centralized in a database under the application developer's
 control. Exposing that data via some sort of API is a good deal of extra effort
@@ -55,24 +57,28 @@ We therefore propose a set of tools which make real-time multi-user
 collaboration significantly easier to implement without lock-in or forcing users
 to cede control of their personal data.
 
-We will build these tools on top of m-ld's "domains", a CRDT for replicating
-Linked Data graphs in realtime. By replicating the data locally among
-collaborating participants, we preserve the users' ownership of their own data.
-By using Linked Data as the basis for the data model, we ensure that application
+We will build these tools on top of **m-ld**'s "domains", a CRDT for replicating
+Linked Data graphs in realtime.
+
+- By replicating the data locally among collaborating participants, we preserve
+  the users' ownership of their own data.
+- By using Linked Data as the basis for the data model, we ensure that application
 data is readable at some level by any other Linked Data tool. For instance, the
 data can easily be moved between a m-ld domain and a Solid pod if desired, where
-it can be used by other applications. For hosted persistence, we offer the m-ld
-Gateway, a server which (among other functions) operates as another participant
-in the domain, and thus keeps its own copy of the data, analogous to an IPFS
-pinning service. This Gateway service may be offered by the application
-developer for convenience, but it may also be operated by end user themselves if
-desired, preserving user control. Just as end users can bring their own pods to
-a Solid app, they can also bring their own Gateways to these collaborative apps.
+it can be used by other applications. 
+
+For hosted persistence, we offer the m-ld Gateway, a server which (among other
+functions) operates as another participant in the domain, and thus keeps its own
+copy of the data, analogous to an IPFS pinning service. This Gateway service may
+be offered by the application developer for convenience, but it may also be
+operated by end user themselves if desired, preserving user control. Just as end
+users can bring their own pods to a Solid app, they can also bring their own
+Gateways to these collaborative apps.
 
 # background (how we got here)
 
 | Doc                                                                                                                              | Published/Last Updated | Purpose                                                                       |
-| -------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------- |
+|----------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------------------------|
 | [Web Zero, with m-ld](https://github.com/m-ld/web-zero/wiki/Proposal)                                                            | 01-02-22               | Original Web Zero Proposal                                                    |
 | [Questions](https://github.com/m-ld/web-zero/wiki/Questions)                                                                     | 30-03-22               | Feedback questions on proposal                                                |
 | [Web Zero with RDFa “Spec”](https://github.com/m-ld/web-zero/blob/main/spec.md)                                                  | 20-02-23               | Emphasis on Linked Data rather than plain DOM                                 |

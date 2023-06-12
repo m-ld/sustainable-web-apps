@@ -41,7 +41,7 @@ cloud {
   backup -- dapi
 }
 
-[other collaborators...] as others
+collections "other collaborators" as others
 
 Graph --> messaging
 gwGraph --> messaging

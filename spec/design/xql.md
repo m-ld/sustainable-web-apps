@@ -1,6 +1,6 @@
 # "xQL": A query language
 
-To make such an application suitably easy to build well, we believe developers
+To make a sustainable application suitably easy to build well, we believe developers
 need a language for interacting with data which is:
 
 - **Expressive**—able express all the data access and mutation an application
@@ -682,7 +682,7 @@ will display the docstrings given for each of them. (It would be preferable to
 display a docstring defined within `PropertyTypes`, but unfortunately [this is
 not currently possible in
 TypeScript](https://github.com/microsoft/TypeScript/issues/50715). If this issue
-is resolved, however, we will be able to add that ability.) possible.
+is resolved, however, we will be able to add that ability.)
 
 JSON-LD contexts propagate to child nodes, and these types propagate in the same
 way. Thus:
