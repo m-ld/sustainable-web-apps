@@ -219,14 +219,14 @@ Initially, therefore, we will allow for options 1 & 2 in our implementation. Dec
     {
       "@type": "js:CommonJSExport",
       "js:require": "@m-ld/m-ld/ext/tseq",
-      "js:class": "TSeqDatatype",
+      "js:class": "TSeqExtension",
       "sh:path": { "@vocab": "story" }
     }
   ]
 }
 ```
 
-- In this example, `TSeqDatatype` is a Javascript class applying a Text CRDT (under development).
+- In this example, `TSeqExtension` is a Javascript class applying a Text CRDT (under development).
 - We have co-opted the SHACL `path` predicate to declare the affected property. 🚧 This approach may change.
 - As usual, this declaration will be simplified with a utility method.
 
