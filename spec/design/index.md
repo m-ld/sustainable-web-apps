@@ -4,5 +4,6 @@
 2. [Hypothesis](hypothesis.md)
 3. [Project Approach](approach.md)
 4. [Architecture](architecture.md)
-5. [Query API](xql.md)
-5. [Text API](text-api.md)
+5. [Security](security.md)
+6. [Query API](xql.md)
+7. [Text API](text-api.md)

@@ -47,6 +47,8 @@ Graph --> messaging
 gwGraph --> messaging
 others --> messaging
 
+Graph -> gwGraph : initial backup
+
 origin ..> app: HTTP
 
 @enduml

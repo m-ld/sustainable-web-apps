@@ -69,3 +69,8 @@ We will provide support in the Collaborative Web Library to easily use the new *
 In our closing demonstration, we will use the Collaborative Web Library and cloud Gateway to build a live web application, with the nature of a collaborative web page, having no additional server components, from scratch, using only readily-available tools.
 
 We'll provide the demo also as an online tutorial for developers to try out and to remix, and to base their Sustainable apps on!
+
+---
+
+| ≪ prev: [hypothesis](hypothesis.md) | next: [architecture](architecture.md) ≫ |
+|-------------------------------------|-----------------------------------------|

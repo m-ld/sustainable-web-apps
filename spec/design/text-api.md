@@ -245,3 +245,8 @@ Initially, therefore, we will allow for options 1 & 2 in our implementation. Dec
 <br>[12] https://spec.m-ld.org/#events
 <br>[13] https://www.w3.org/2007/OWL/draft/ED-rdf-text-20090420/
 <br>[14] https://js.m-ld.org/#extensions
+
+---
+
+| ≪ prev: [query API](xql.md) |
+|-----------------------------|
