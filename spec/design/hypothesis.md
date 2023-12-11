@@ -11,3 +11,7 @@ We believe that neither of these are conflicts at all.
 
 Therefore, our hypothesis in this project is that web app data securely stored in **reactive, replicated Linked Data graphs** can both exhibit the desirable properties of [Sustainable Apps](../sustainability.md) and meet today's and tomorrow's feature expectations without the high costs and limitations of today's distributed data architectures.
 
+---
+
+| ≪ prev: [prior art](prior-art.md) | next: [project approach](approach.md) ≫ |
+|-----------------------------------|-----------------------------------------|

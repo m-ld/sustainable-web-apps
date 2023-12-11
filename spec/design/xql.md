@@ -793,3 +793,8 @@ object type, taking query placeholders into account, and do no term resolution
 using the context. Having established in the JSON-LD document types described
 above that we can do that term resolution, we are confident we can reuse it for
 result typing.
+
+---
+
+| ≪ prev: [security](security.md) | next: [text API](text-api.md) ≫ |
+|---------------------------------|---------------------------------|

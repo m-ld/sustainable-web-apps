@@ -72,3 +72,8 @@ Therefore, while there is nothing inherently opposed to the local-first approach
 ## bibliography
 <br>[1] _Truth and Just Lists_, George Svarovsky, 11-Feb-2021, https://codeburst.io/truth-and-just-lists-67c0e0e22a9d
 <br>[2] _Local-first software_, Ink&Switch, Apr-2019, https://www.inkandswitch.com/local-first/
+
+---
+
+| ≪ prev: [contents](index.md) | next: [hypothesis](hypothesis.md) ≫ |
+|------------------------------|-------------------------------------|
