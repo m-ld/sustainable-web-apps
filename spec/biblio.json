@@ -1,0 +1,62 @@
+{
+  "SOLID": {
+    "title": "Solid Project",
+    "href": "https://solidproject.org/"
+  },
+  "SYNCHRONY": {
+    "title": "How we built Synchrony",
+    "href": "https://www.youtube.com/watch?v=2nw2Jx9tSBY",
+    "authors": [
+      "Haymo Meran"
+    ],
+    "date": "2016"
+  },
+  "CAB": {
+    "title": "m-ld for computer-aided biology",
+    "href": "https://m-ld.org/cab",
+    "authors": [
+      "Adam Paton",
+      "George Svarovsky"
+    ]
+  },
+  "LOFI": {
+    "title": "Local-first software",
+    "publisher": "Ink&Switch",
+    "date": "April 2019",
+    "href": "https://www.inkandswitch.com/local-first/"
+  },
+  "12FA": {
+    "title": "The Twelve-Factor App",
+    "href": "https://12factor.net"
+  },
+  "LOD": {
+    "title": "The Linked Open Data Cloud",
+    "href": "https://lod-cloud.net/"
+  },
+  "OWASP": {
+    "title": "Top 10 Web Application Security Risks",
+    "href": "https://owasp.org/www-project-top-ten/",
+    "date": "30 September 2021"
+  },
+  "WEBID": {
+    "title": "WebID 1.0 Web Identity and Discovery",
+    "href": "https://www.w3.org/2005/Incubator/webid/spec/identity/",
+    "date": "5 March 2014"
+  },
+  "OIDC": {
+    "title": "OpenID Connect Core 1.0",
+    "href": "https://openid.net/specs/openid-connect-core-1_0.html",
+    "date": "8 November 2014"
+  },
+  "PKI": {
+    "title": "Public key infrastructure",
+    "href": "https://en.wikipedia.org/wiki/Public_key_infrastructure",
+    "publisher": "Wikipedia",
+    "date": "10 December 2023"
+  },
+  "TRUTH-LISTS": {
+    "title": "Truth and Just Lists",
+    "href": "https://codeburst.io/truth-and-just-lists-67c0e0e22a9d",
+    "date": "11 February 2021"
+  }
+}

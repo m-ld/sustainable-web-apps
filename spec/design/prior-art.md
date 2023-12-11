@@ -12,7 +12,7 @@ Semantic web technologies, such as the Resource Description Framework (RDF) and 
 
 The semantic web idea primarily focuses on the organization and structure of information rather than user interfaces or design elements that could lead to attention theft. However the emphasis on open standards and the ability to represent and share data in a decentralised manner aligns with the principle of retaining control over personal data, as users can have greater agency in managing and deciding how their data is stored, accessed, and shared in apps based on the semantic web. We'll discuss this more [below](#solid).
 
-The semantic web encourages the sharing and linking of data across different applications and domains. This suggests the possibility of real-time collaboration. However, it offers no specific approaches, whether abstract or algorithmic, as to how this can be achieved in practice. As a specific example, RDF Collections are not amenable to concurrent editing [1], and while this might be reasonably excused as out of scope, the problem needs to be solved somehow.
+The semantic web encourages the sharing and linking of data across different applications and domains. This suggests the possibility of real-time collaboration. However, it offers no specific approaches, whether abstract or algorithmic, as to how this can be achieved in practice. As a specific example, RDF Collections are not amenable to concurrent editing [[TRUTH-LISTS]], and while this might be reasonably excused as out of scope, the problem needs to be solved somehow.
 
 The core concept of the semantic web revolves around interlinking data across the web. Semantic web technologies provide mechanisms to establish meaningful connections and relationships between disparate datasets and information sources. This aligns with the principle of linking data between applications and facilitates data analysis and knowledge discovery.
 
@@ -34,7 +34,7 @@ Finally, personal data stores specifically prioritise data privacy and security.
 
 ## local-first
 
-The concept of "local-first" applications, as canonically described by Ink&Switch [2], emphasises prioritizing the user's local device as the primary storage and processing location for data, with synchronization capabilities for collaboration and resilience.
+The concept of "local-first" applications, as canonically described by Ink&Switch [[LOFI]], emphasises prioritizing the user's local device as the primary storage and processing location for data, with synchronization capabilities for collaboration and resilience.
 
 ![local-first software empowers collaboration and offline usage by storing data locally and syncing when possible](https://pbs.twimg.com/media/FLVeiv4XEBIH8uK?format=jpg&name=4096x4096)
 
@@ -68,10 +68,6 @@ This model de-couples applications from proprietary data storage. Data is instea
 The natural (but by no means mandatory) deployment model for this conceptual model is to realise Pods as servers, each with suitable network address translation to allow them to host data addressed with URLs. All Solid implementations are currently server-based.
 
 Therefore, while there is nothing inherently opposed to the local-first approach in Solid, in practice it is not yet addressed. Partly this is because local-first depends strongly on algorithmic techniques for distributed data which allow for the inherent lack of central management.
-
-## bibliography
-<br>[1] _Truth and Just Lists_, George Svarovsky, 11-Feb-2021, https://codeburst.io/truth-and-just-lists-67c0e0e22a9d
-<br>[2] _Local-first software_, Ink&Switch, Apr-2019, https://www.inkandswitch.com/local-first/
 
 ---
 
