@@ -7,7 +7,7 @@ This is how a [=sustainable=] web app is structured, in the abstract.
 ![architecture components](design/img/architecture.component.svg "Architecture components")
 
 - The JavaScript code and other static assets of the Sustainable Web App (the _app_, in pink) are served from some origin via HTTP.
-- The app establishes a working Graph, comprised of _semantic web_ data (non-specific serialisation).
+- The app establishes a working Graph, comprised of _semantic web_ data [[RDF-NOT]] (non-specific serialisation).
 - The Graph is stored locally, and so is available without a network round-trip (unless it has to be fetched to get started!). It is local-first [[LOFI]].
 - If other replicas of the Graph exist elsewhere, they are synchronised, when the network is available, via a Message Delivery service.
 - If desired for data safety, the Graph can also be replicated to a Backup service, having its own persistent storage.
@@ -15,7 +15,7 @@ This is how a [=sustainable=] web app is structured, in the abstract.
 
 ### Collaborative Web Library
 
-The Collaborative Web Library (the _lib_) is primarily responsible for ensuring that the Graph is as up-to-date as physics allows, compared to any other replicas that may exist. It exposes the Graph to the application via a local API.
+The Collaborative Web Library is primarily responsible for ensuring that the Graph is as up-to-date as physics allows, compared to any other replicas that may exist. It exposes the Graph to the application via a local API.
 
 ### Services
 

@@ -58,5 +58,21 @@
     "title": "Truth and Just Lists",
     "href": "https://codeburst.io/truth-and-just-lists-67c0e0e22a9d",
     "date": "11 February 2021"
+  },
+  "M-LD": {
+    "title": "m-ld Specification",
+    "href": "https://spec.m-ld.org/",
+    "repository": "https://github.com/m-ld/m-ld-spec",
+    "date": "3 October 2023"
+  },
+  "TODOMVC": {
+    "title": "TodoMVC",
+    "href": "https://todomvc.com/",
+    "repository": "https://github.com/tastejs/todomvc"
+  },
+  "JSON-RQL": {
+    "title": "JSON Resource Query Language",
+    "href": "https://json-rql.org/",
+    "repository": "https://github.com/gsvarovsky/json-rql"
   }
 }

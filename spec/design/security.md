@@ -68,7 +68,7 @@ The Solid specification delegates identity management, allowing for either of th
 
 Solid establishes a strong ownership model over data by means of personal data _pods_, in which the data reside – at least, as the definitive source of truth. However, Solid pod servers are strictly limited to implementing the Solid specifications – by design, so that they are interchangeable. This means that they cannot be expected to participate in the additional protocol requirements of a local-first technology such as a CRDT.
 
-However, data in Solid is inherently Linked Data, and in which every resource has a URL. This suggests an architecture in which access to the dataset is mediated via a server component, which is able to use the Solid Pod to record ownership of datasets ("deeds"). (Naturally, such a component can also "bank" quiescent data to the Pod when no-one is working on it. This has been proposed previously for **m-ld** domains.)
+However, data in Solid is inherently Linked Data, and in which every resource has a URL. This suggests an architecture in which access to the dataset is mediated via a server component, which is able to use the Solid Pod to record ownership of datasets ("deeds"). (Naturally, such a component can also "bank" quiescent data to the Pod when no-one is working on it. This has been proposed previously for **m-ld** domains [[M-LD]].)
 
 This approach has the drawback that the proposed app server component is not itself substitutable, and so manifests some lock-in. However, if this approach is found to be popular it could be standardised – as part of this initiative, or Solid itself.
 
