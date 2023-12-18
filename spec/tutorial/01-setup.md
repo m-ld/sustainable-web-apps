@@ -12,6 +12,8 @@ The following link starts a Flems environment in a new tab, with the required se
 
 <a href="https://flems.io/#0=N4IgzgpgNhDGAuEAmIBcIB0ALeBbKIANCAGYCWMYaA2qAHYCGuEamO+RIsA9nYn6wA8AQgAiAeQDCAFQCaABQCiAAnZQAfAB06gtcqgM6AcwC8mkBDrmtV+LogMkNzfBeDm8BsthYGAJ0h4MxAAV3gSAFoADnNlAHpnVzsPL0ZmYIA3MggAdwAHbj9XEG9efiDzHLIkeCwTJAgs2AgIqpqsQmUyOjJ4MgYoCLBYAYgTAEZYhO0XNz74GHVpCFw8g0RlQCICZWluJG4AWQA1SUE4+cWZuzisBycrwQAjPYBPRLdIBDJebwMwMGC8D23AYeTysWqwVB4JA7yS9kcED8vwY-2Ct0RfmsV1m8Kw43Ugi8WD8EBIwQw1iB+zAZwYhJuBJxSTc3TyYWZuJcawYzSw3CgDT8wQA6r54Mo6BBkGBlEDlI8IMp9lKAPzmTkszxhbgkbiwEJgTW42B-AHmKU5CLU7ga2xcpKQi25O0O3FIMhgBiPGBIY3wab2+E3O5ImzKCPKM6fPq8RJnZ5IN7aM5qGycSAwL68KjoAAMqHGAFYQABfQj0JgsdAYABWVGIPD4lngrDLAF1iFBugBrXO0EBpasgboNAAeGFg-04IT8BHQOHgeTAqDicT8DByGCMvSwIUehqRTfKk+4uDiuAigovV6Q1uBuAysAiGUMFAM9fXK24GRaYCBpJxFOYBxKOEATsBnDwC8eTDv+LwwB2pZAA" target="_blank"><img src="flems.svg" height="30"> <b>Start the tutorial on Flems</b></a>
 
+Note when using Flems, it re-loads the app for every change you make. As we proceed to other steps you might want to pause the reloading (there's a toggle button, top-right), to stop unexpectedly emptying your Todo list state.
+
 ## Option 2: Using Localhost
 
 Using your computer to host the web application based on local files will allow you to easily keep track of your progress and version control any further experiments. You will need to be able to create and edit text files, and a web browser with an internet connection.

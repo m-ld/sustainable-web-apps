@@ -74,5 +74,9 @@
     "title": "JSON Resource Query Language",
     "href": "https://json-rql.org/",
     "repository": "https://github.com/gsvarovsky/json-rql"
+  },
+  "RXJS": {
+    "title": "RxJS Reactive Extensions Library for JavaScript",
+    "href": "https://rxjs.dev/"
   }
 }

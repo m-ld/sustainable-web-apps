@@ -10,3 +10,5 @@
 The TodoMVC initiative [[TODOMVC]] is "a project which offers the same Todo application implemented using MV* concepts in most of the popular JavaScript MV* frameworks of today."
 
 In this tutorial we will implement a Todo application in vanilla JavaScript, starting with some minimal CSS and HTML based on the TodoMVC project assets.
+
+We will assume you have a working knowledge of HTML and JavaScript fundamentals.
