@@ -32,7 +32,7 @@ To begin, create a folder with a file called `index.html`, with the following co
   <body>
     <section class="todoapp" id="app">
       <header class="header">
-        <h1><a href=".">todos</a></h1>
+        <h1><a id="home">todos</a></h1>
         <input
             placeholder="What needs to be done?"
             autofocus
