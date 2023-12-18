@@ -24,7 +24,7 @@ Add the following HTML, just after the existing <code class="hljs-name">header</
 
 This HTML markup establishes an identified space in the DOM for the Todo list itself, and a <code class="hljs-name">template</code> for each Todo item, which we'll use to add items to the list dynamically.
 
-First, we have to consider how to respond to updates. The **m-ld** engine, as represented by our `model` variable, offers a [follow method](https://js.m-ld.org/interfaces/meldstatemachine.html#follow), with which we can receive [**m-ld** update](https://js.m-ld.org/interfaces/meldupdate.html) objects containing fine-grained deletes and insertions into the graph. Since we know the behaviour of our app – the only thing it does is add new titled Todos – we could just inspect the `@insert` component and add the titles to the UI. However:
+First, we have to consider how to respond to updates. The **m-ld** engine, as represented by our `model` variable, offers a [follow method](https://edge.js.m-ld.org/interfaces/meldstatemachine.html#follow), with which we can receive [**m-ld** update](https://edge.js.m-ld.org/interfaces/meldupdate.html) objects containing fine-grained deletes and insertions into the graph. Since we know the behaviour of our app – the only thing it does is add new titled Todos – we could just inspect the `@insert` component and add the titles to the UI. However:
 
 - If we are connecting to an existing Todo list (as we will shortly), we expect to find Todos already in the graph. They won't appear as insertion _updates_.
 - If Todos are removed, or their titles changed, then listening specifically for insertions will not capture the actual changes.
