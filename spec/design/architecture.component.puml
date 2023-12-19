@@ -6,18 +6,13 @@ node "Web Browser" {
   component "Sustainable\nWeb App" as app #pink
   component "Collaborative\nWeb Library" as cwl {
     [Graph]
-    frame API {
-      interface "Reactive\nObservable\nQuery" as query
-      interface "Writing\nData" as data
-    }
   }
 
   database local <<storage>>
 
   Graph <--> local
 
-  app --> query
-  app --> data
+  app --> cwl
 }
 
 cloud CDN {
@@ -33,7 +28,7 @@ cloud "Message Delivery" as messaging <<service>>
 interface "Linked Data" as dapi <<REST>>
 
 cloud {
-  component "Secure Backup" as backup <<optional>> <<service>> {
+  component "Backup" as backup <<optional>> <<service>> {
     component "Graph" as gwGraph
     database "volume or\ndatabase" <<storage>> as gwDb
     gwGraph <--> gwDb
@@ -46,8 +41,6 @@ collections "other collaborators" as others
 Graph --> messaging
 gwGraph --> messaging
 others --> messaging
-
-Graph -> gwGraph : initial backup
 
 origin ..> app: HTTP
 

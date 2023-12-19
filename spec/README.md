@@ -1,10 +1,12 @@
 # specification
 
-This folder contains a draft specification for Sustainable Web Apps, including defining a "sustainable app"; requirements with motivating use-cases; the technical approach taken, including justification of the project hypothesis; and abstract interface descriptions for application developers and framework developers.
+This folder contains both a narrative description of the Sustainable Web Apps project, and a formal specification. Both purposes are served by an overlapping set of markdown files.
 
-The contents of this folder are intentionally structured as sub-folders and files, amenable to individual review, forming the sections of a coherent specification document.
+- The project description can be viewed as plain markdown files beginning here 👉 [Contents and Introduction](index.md)
+- The specification can be viewed by launching `index.html` in a suitable container, e.g. using `npx http-server` in this folder; or online at https://sweap.m-ld.org/.
 
-> Towards the end of the project, we'll publish the final contents of the specification on the web as a single document.
+Included in the specification are a definition a "sustainable app"; requirements with motivating use-cases; and a reference architecture.
 
-## 👉 [Contents and Introduction](index.md)
+The project description contains the same information, plus motivation for the technical approach taken, including justification of the project hypothesis; and abstract interface descriptions for application developers and framework developers.
 
+Bibliographical references (as `[[REF]]` in the markdown) can be found in `biblio.json`.

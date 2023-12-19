@@ -1,0 +1,1 @@
+Web Apps which store data securely in **reactive, replicated Linked Data graphs** can exhibit desirable Sustainable properties and meet today's and tomorrow's feature expectations without the high costs and limitations of today's distributed data architectures.

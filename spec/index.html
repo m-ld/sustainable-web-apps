@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Sustainable Web Applications</title>
+    <script
+        src="https://www.w3.org/Tools/respec/respec-w3c"
+        class="remove"
+        defer
+    ></script>
+    <script class="remove">
+        async function loadBiblio() {
+          const biblioRes = await fetch(new URL('biblio.json', window.location));
+          respecConfig.localBiblio = await biblioRes.json();
+        }
+        // All config options at https://respec.org/docs/
+        respecConfig = {
+            preProcess: [loadBiblio],
+            maxTocLevel: 3,
+            edDraftURI: "https://github.com/m-ld/sustainable-web-apps/tree/main/spec",
+            latestVersion: null,
+            editors: [{name: "George Svarovsky", url: "https://www.linkedin.com/in/gsvarovsky"}],
+            authors: [
+                {name: "Petra Jaros", url: "https://peeja.com/"},
+                {name: "Angus McAllister", url: "https://www.linkedin.com/in/angus-mcallister"},
+                {name: "Rob Ellis", url: "https://www.linkedin.com/in/robwellis"}
+            ],
+            github: "m-ld/sustainable-web-apps"
+        };
+    </script>
+  </head>
+  <body>
+    <h2 id="subtitle">Specification</h2>
+    <p class="copyright">Copyright © 2023 m-ld.io Ltd. Content licensed
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+    <section
+        id="abstract"
+        data-include="abstract.md"
+        data-include-format="markdown"
+    ></section>
+    <section
+        class="introductory"
+        data-include="introduction.md"
+        data-include-format="markdown">
+    </section>
+    <section
+        data-include="sustainability.md"
+        data-include-format="markdown">
+    </section>
+    <section
+        data-include="use-cases.md"
+        data-include-format="markdown">
+    </section>
+    <section
+        data-include="design/architecture.md"
+        data-include-format="markdown">
+    </section>
+    <section
+        data-include="design/security.md"
+        data-include-format="markdown">
+    </section>
+    <section class="appendix"
+        data-include="acknowledgements.md"
+        data-include-format="markdown">
+    </section>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+hide footbox
+!pragma teoz true
+
+participant "Browser\nHTML" as dom
+participant "JavaScript\nApp" as app
+participant "Graph\n(Model)" as mld
+
+dom -> app ++ : change event
+app -> mld ++-- : write
+mld -> : message delivery\nto other clones
+& mld -> app ++-- : update
+app -> dom : sync
+
+@enduml

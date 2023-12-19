@@ -1,20 +1,18 @@
-# use-cases
+# Use-Cases
 
-Our project narrative intentionally encompasses a wide range of end-user use-cases. We want to show that no compromise is necessary in building a '[sustainable](sustainability.md)' app versus building an unsustainable one, for a large set of them.
+This specification intentionally encompasses a wide range of end-user use-cases. No compromise should be necessary in building a [=sustainable=] app versus building an unsustainable one, for a large set of them.
 
 However, we are clearly not going to demonstrate radical improvements to every possible web app. So actually, our 'users' are the engineers who build those apps. We look at use-cases not only from the end-user perspective but also from the engineer perspective, to motivate our design hypothesis. In the context of this project, we especially want to consider cases that we can usefully demonstrate, taking the role of application developers ourselves; and still give confidence that the solution will scale to production features and workloads.
 
 The following use-cases are primarily drawn from the personal experience of the project team, both as users and as engineers.
 
-### terminology
+### Terminology
 
 In the following we make use of software engineering terms, intending their usual meaning. Here are some definitions of the more esoteric ones:
 
-| term                      | meaning                                                                                                                  |
-|---------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| partially structured data | data whose structure is at least partially described in a data model, which may be abstract with respect to some content |
-| variety (big data axis)   | an abstract expression of the diversity of data types and relationships in data, and how frequently these can change     |
-| veracity (big data axis)  | an abstract expression of the quality of data, including its precision and accuracy                                      |
+- <dfn>partially structured data</dfn>: data whose structure is at least partially described in a data model, which may be abstract with respect to some content
+- <dfn>variety</dfn> (big data axis): an abstract expression of the diversity of data types and relationships in data, and how frequently these can change
+- <dfn>veracity</dfn> (big data axis): an abstract expression of the quality of data, including its precision and accuracy
 
 ## Project Management
 
@@ -29,20 +27,24 @@ In the following we make use of software engineering terms, intending their usua
 
 ### Engineering Challenges
 
-1. Project management information is an example of partially structured data with significant requirements on the variety and veracity 'big data' axes:
+1. Project management information is an example of [=partially structured data=] with significant requirements on the [=variety=] and [=veracity=] 'big data' axes:
    - Combination of strictly typed and controlled fields and forms, with free-form rich text
    - Business process management features such as workflow
    - Significant desire to tailor the above based on context and project needs
    - Links to other systems such as Customer Relationship Management, Customer Support, Source Code Control
    - Summarisation and dashboarding for reporting to stakeholders
 2. Features tend to have been added ad-hoc during the product's lifecycle, resulting in significant technical debt.
-3. Specifically, the need for **live collaborative editing** and **system integration APIs** tend to come later in the product's maturity cycle, once customers are already on-board. These are well-known to be hard to retrofit [1].
+3. Specifically, the need for **live collaborative editing** and **system integration APIs** tend to come later in the product's maturity cycle, once customers are already on-board. These are well-known to be hard to retrofit [[SYNCHRONY]].
 
-### Demonstration
+<div class="remove">
+
+**Demonstration**
 
 A full project management application is clearly a significant engineering undertaking. However, its essence is to enable planning and tracking of a 'project'; and in many systems the information structure is reduced (fairly successfully) to individual data items known variously as 'tickets' or 'issues' or 'cards'.
 
 It should be sufficient to demonstrate that an application structured like this can be built in such a way that the challenges above are addressed early on, without affecting the speed of delivery and the eventual feature richness.
+
+</div>
 
 ## Note-Taking
 
@@ -58,15 +60,19 @@ It should be sufficient to demonstrate that an application structured like this 
 
 ### Engineering Challenges
 
-1. Notes are an example of partially structured data with significant requirements on the variety and veracity 'big data' axes:
+1. Notes are an example of [=partially structured data=] with significant requirements on the [=variety=] and [=veracity=] 'big data' axes:
    - Primarily free-form rich text, but with additional requirements for commenting, tagging, categorising, citing and linking, where such metadata may need to be structured to conform to the thought-worker's or their organisation's controlled vocabularies.
    - Links to other systems such as Data Analytics, Document Management, Project Management; including import and export as well as referencing.
 2. Features tend to have been added ad-hoc during the product's lifecycle, resulting in significant technical debt.
-3. Specifically, the need for **live collaborative editing** and **system integration APIs** tend to come later in the product's maturity cycle, once customers are already on-board. These are well-known to be hard to retrofit [1].
+3. Specifically, the need for **live collaborative editing** and **system integration APIs** tend to come later in the product's maturity cycle, once customers are already on-board. These are well-known to be hard to retrofit [[SYNCHRONY]].
 
-### Demonstration
+<div class="remove">
+
+**Demonstration**
 
 The essence of note-taking is sufficiently straightforward that it is frequently used as a demo app for software development tooling. However, such demos are usually oriented to meeting the user's most immediate needs, without addressing requirements that will inevitably become significant later, such as live collaboration and system integration; and particularly data portability, which may even be regarded as a negative feature from the point of view of a software vendor.
+
+</div>
 
 ## Electronic Lab Notebook
 
@@ -76,23 +82,23 @@ The essence of note-taking is sufficiently straightforward that it is frequently
 
 - Scientific experimental information is inherently variable; novel research requires novel data structures and combinations. Electronic lab notebooks (ELNs) are frequently either too restrictive to cope with novel research (especially if they have been developed for tightly regulated environments), or are so free-form that they amount to little more than a document management system.
 - ELN apps store (and may export) data in proprietary formats, making it difficult to migrate or share data across different platforms. Scientists face challenges in accessing and utilizing their data outside of the specific ELN app – this is despite the availability of standards for data export.
-- Many scientific projects involve collaboration among multiple researchers and teams. Existing ELN apps may not adequately support collaboration features, making it challenging for scientists to share protocols, notes, and data with collaborators in real-time. (There is potential for huge improvements here, especially when experiments need to change in real-time as they are performed, sometimes very quickly, e.g. if they are automated. [2])
+- Many scientific projects involve collaboration among multiple researchers and teams. Existing ELN apps may not adequately support collaboration features, making it challenging for scientists to share protocols, notes, and data with collaborators in real-time. (There is potential for huge improvements here, especially when experiments need to change in real-time as they are performed, sometimes very quickly, e.g. if they are automated. [[CAB]])
 - Scientific research often involves sensitive and proprietary information, including information related to a worker's behaviour. Existing ELNs may have privacy and security concerns, especially if data is stored by the app provider, and especially if that is in an unacceptable legal jurisdiction.
 - Scientists use a variety of tools and technologies in their research workflows, including data analysis software, laboratory equipment, inventory systems, and data catalogs. Existing ELN apps may lack seamless integration with these tools, leading to a disjointed workflow and decreased efficiency.
 
-## Engineering Challenges
+### Engineering Challenges
 
-1. Experimental data are an example of partially structured data with significant requirements on the variety and veracity 'big data' axes:
+1. Experimental data are an example of [=partially structured data=] with significant requirements on the [=variety=] and [=veracity=] 'big data' axes:
    - Primarily highly-structured text and numerical data, according to pre-defined standard templates, often modified, and also often not used due to the novelty of the science (but the data is still structured!).
    - Additional requirements for commenting, tagging against controlled vocabularies, and audit logging including electronic signatures.
    - Links to other systems such as Data Analysis, equipment controllers, Lab Informatics including Inventory Systems; including import and export as well as referencing.
 2. Features tend to have been added ad-hoc during the product's lifecycle, resulting in significant technical debt.
-3. Specifically, the need for **live collaborative editing** and **system integration APIs** tend to come later in the product's maturity cycle, once customers are already on-board. These are well-known to be hard to retrofit [1].
+3. Specifically, the need for **live collaborative editing** and **system integration APIs** tend to come later in the product's maturity cycle, once customers are already on-board. These are well-known to be hard to retrofit [[SYNCHRONY]].
 
-## Demonstration
+<div class="remove">
+
+**Demonstration**
 
 In this rather more niche use-case, the app engineers are often so subsumed in meeting complex and _inherently_ ever-evolving user requirements, that they are unable to dedicate any time to changing fundamental parts of their system such as architecting to reduce lock-in, provide live collaboration, or switch data formats to more standard ones. In all likelihood, only new projects, e.g. in start-ups, have the opportunity to visit these ideas before it's too late. A valid demonstration including all of these needs at once is difficult, but a senior engineer in this domain could join the dots from a demo of one of the other use-cases.
 
-## bibliography
-<br>[1] "Need a lot of endurance" – _How we built Synchrony_, Haymo Meran 2016 https://www.youtube.com/watch?v=2nw2Jx9tSBY
-<br>[2] https://m-ld.org/cab
+</div>
