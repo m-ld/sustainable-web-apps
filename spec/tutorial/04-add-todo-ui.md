@@ -41,22 +41,22 @@ Down at the bottom of the JavaScript, let's use the function `watchQuery` to get
 
 ```js
 const roq = watchQuery(model, state => state.read({
-  "@describe": "?id", "@where": { "@id": "?id", title: "?" }
+  '@describe': '?id', '@where': { '@id': '?id', title: '?' }
 }));
 ```
 
-The function takes the model we want to query, and a procedure to run. This procedure is passed a `state` object representing the current state of the domain graph, which we can query using the `read` method to obtain, in our case, a set of Todo objects. The query we're using is a ["describe"](https://edge.js.m-ld.org/interfaces/describe.html), which is a convenient way to obtain all the properties of matching objects.
+The function takes the model we want to query, and a procedure to run. This procedure is passed a `state` object representing the current state of the domain graph, which we can query using the `read` method to obtain, in our case, a set of Todo objects. The query we're using is a "Describe", which is a convenient way to obtain all the properties of objects matching the given _pattern_, in which something beginning with a question mark is a _variable_. You can learn more in the [Describe documentation](https://edge.js.m-ld.org/interfaces/describe.html).
 
 Finally, let's `subscribe` to the reactive Observable and use the template to replace the contents of the Todo list using the new array of Todo objects provided by the query:
 
 ```js
-const list = document.getElementById("list");
-const template = document.getElementById("todo-template");
+const list = document.getElementById('list');
+const template = document.getElementById('todo-template');
 roq.subscribe(todos => {
   const listItems = todos.map(todo => {
     const fragment = template.content.cloneNode(true);
-    fragment.getElementById("label").textContent = todo.title;
-    return fragment.getElementById("todo");
+    fragment.getElementById('label').textContent = todo.title;
+    return fragment.getElementById('todo');
   });
   list.replaceChildren(template, ...listItems);
 });
@@ -64,4 +64,4 @@ roq.subscribe(todos => {
 
 The magic of `watchQuery` is that we only have to provide a query, not any update handling; but still, for every subscription notification, we'll get the results of the query – as if it is being re-run on every update.
 
-<a href="https://flems.io/#0=N4IgZglgNgpgziAXAbVAOwIYFsZJAOgAsAXLKEAGhAGMB7NYmBvAHgEIARAeQGEAVAJoAFAKIACEmQB8AHTQtJUMVAxoA5gF4ZIJttloZxBTAwATfYcMscxDGOqEMAJzgxiWkAFdiYALQAObTEAegtiKxs7TBwPADcIGAB3AAdaJ3CQe3pGBg9EiFNiQg1TGHjqGF98wsIKMQg0CGIIDChfOGpWmA0ARiDQuUsjZuJYKT4YLGSVRjFAIgIxPlpTWgBZADUeFmCRscGjYMITc32WACNlgE8wq1dqZvp7FTg4D2Jl2gxk5KCCjy+fiAbuEjEczDAnE8MC8PGDSk49PshlZCD0pCw7IQnDAwB58Hp3is4NsMOjDmikSCrA1kt5KcjiNMMBVCLQoPCPAB1RzEMRoGAwUxwMTvMRnGBiFb8gD82npVNs3loYFo1E8cHlQ2oz1e2n5iV8hNocoMCqGfz1SRNDKGpggcAwZ1gpk1xAGpqG2zhEP0Yj9-pYdweaChMO0WAwDV+pg8EajQLk-qTYhYniU2uhupARt8UHtGXqMe0ebgGV9yaTLEYUxmEot2Y+hsmTMYiJDFeTLDzhbeHzbHY7LDtsVDWfiVoT7YHFa7jpgSnrKnFUD02yX8-L04DwWHm+na4ge5nO2btaP27T5+2QYg9D315g91vaDC2wupmuci9pCg+koIFcWAn3oBBEBAHp-EQABmXwIMQHoACYQAAXwodBsFwMD8AAKwQKg6AYJhiDwCApjSXlgG1egYDqTxPAKZCxDAJxaCwMQAHISEZOBEGCYJBTUGAcLgfAsFzUx8DSNR+IADzdBpShk0TcPYgBuORSNSdIxGAVZJjSS4ABkynnRjmNYjiuOSHi+IEoTcNE8TJKcaSYDk4IcCwAzcxMqBlLgNSNLI7TgAASVoAAlfTGDgMyWLYzjiG43j+NMQThMc9lnNc9y4FVABrNx8FvfzAsaYKKMSDBiAcABFTwIUuOKLMS5LbLS+yRLErKpNkt0nCUrAVPUgw0AI0ssjQSA1DEDQdMTMRtAAAQKbREDEOiCgACgASgoBblpWOMDCQMQAAMABJgE20xduQ-BaSdCBqHwNREkyiSpLO-b20E-k4HtdbiCcBqfr9W91uupwIHWs6rJs4I3o+7KzuQuRkJG8beS80olDmjAqqaJ5qK2-UxD0rynCM3y6nCqKvJiuoCOmnbMZAtkhKgWg1C2s7VmWed7GxarBTEaqxCu5mIDUZB2KWo7IzQdiAF1kLO1nBjGkDeX1UK0FpXk5pWNUcAYV63BEWBTeIAAhS5Qtuy1Em0DW0F1-XvHwO0HSdUW5rAVpXBGuR3YN-AzFMERYiIwz8yYCEtu0QrLk8QE6i2mAdtmqR5vbCAwDEDP8GT2aNDm7QREIhFMgAMhrvkkj1sPYlaBr8FgdQiiz4AFr9HH53wRJocYLae6nf1dhgdbQ89luoFB3uxGQnb8E6GrCC28aOfwCEWKcVmB0XvjFiOENtRMSEijrD3eQuGSmLSEUjgbuT6mrReZ+IfA54a2bFpAbQI0-RozQMvYOWs0ATRYgARz-lVde9VGpbX7lAOopYRbZzEOgxg+Bha3THn6Q68BqDQ3FGtf+0pVqUH-ktRIRxsTkOADQqh61tCUJdNQyerCQCykyCA5ers5BY2UPmP+xtPDW3NsQS2kwiJ2wdonEAJYMiu2EdWFsEojaqgkURKRMjrbyMdg2FYTYawixdiNGB+A4CeDOB0UhMAtpGmFBoHOBDJoTWUaFasLiRQfC6l8JxHxMHuL9MI5iGA1DWz-uo2sq9si6KovyAAcgLJxINM5AP9BEqJujBLSKtnI+2Rj1wrhACvRgckeAJIYDEj4+BJ5ZL9NiYgngnAhhyZI-J+iikKO0EaCxC0wELWUbgmATIKg8EINAUw2I0BONPCLOo+AVleJ8a7MB-5AKPmDKBEAUEeiIAAAwoWVlQPMaB8qgVQCAaImEQAKTcqvF4-42nkDAvDFKTgCavSaIQWx6oIQERyF-OgWAPLiQheyQ0HwsCxGoL4FujQoAqFwsEbEXlo7tHeNiYI1AXjBEeUpfFeFsyXGSPc0slxYCnOQkAA" target="_blank"><img src="flems.svg" height="30"> <b>Todo list update handling, on Flems</b></a>
+<a href="https://flems.io/#0=N4IgZglgNgpgziAXAbVAOwIYFsZJAOgAsAXLKEAGhAGMB7NYmBvAHgEIARAeQGEAVAJoAFAKIACEmQB8AHTQtJUMVAxoA5gF4ZIJttloZxBTAwATfYcMscxDGOqEMAJzgxiWkAFdiYALQAObTEAegtiKxs7TBwPADcIGAB3AAdaJ3CQe3pGBg9EiFNiQg1TGHjqGF98wsIKMQg0CGIIDChfOGpWmA0ARiDQuUsjZuJYKT4YLGSVRjFAIgIxPlpTWgBZADUeFmCRscGjYMITc32WACNlgE8wq1dqZvp7FTg4D2Jl2gxk5KCCjy+fiAbuEjEczDAnE8MC8PGDSk49PshlZCD0pCw7H9tIRaDg9O8VnBthh0Yc0UiQVYGslvBTkcRphgKjioPCPAB1RzEMRoGAwUxwMTvMRnGBiFa8gD82jplNs3loYFo1E8cFlQ2oz1e2l5iV8BNoMoMcqGWJAuqN9KGpggcAwZ1gpnVxAGxqG2zhEP0Yh9vpYdweaChMO0WAwDV+pg8YYjQLkvoTYhYniUmuh2pABt8UFtGXqUe0ObgGW9iYTLEYUxmYrNWcrjMYiKDZcTLBz+beHybLZbLBtsWDGfiSW7Pd7KlFSjNE5gUD02xnUFLY79wX7y7HC4gG7L23r1Z3q5Th+2AYg9A3p5g93PaDC2wupmucg9pCXckoIFcsBv9AQiBAABmAAGRBgJAABfCh0GwXAAPwAArBAqDoBgmGIPAICmNJuWATV6BgOpPE8AoILEMAnFxMQAHISAZOBEGCYJ+TUGBELgfAsGzUx8DSNRmIADxdBpSgEzikOogBuOQsNSdIxGAVZJjSS4ABkylnMiKKo2jiHoxjmNMVj2M47jeKcfiYCE4IcCwFTsw0qBxLgKSZOw+TgAASVoAAlZTGDgLTKKwGi6OSBimJYtikNM1lzMs6y4GVABrNx8HPZzXMadzcMSDBiAcABFTwIUuIKdLCiLDOMmKuLivjBJdJwxKwCTpIMNBUOLLI0EgNQxA0BT4xogABApqMQMRiIKAAKABKChhuokaVhjNAJrEAADAASYBptMeaIPwGkHQgah8DURJYp4vjNsW5tWN5OBbUm4gnBK+6fXPSa9qcCBJs2yqDMu674s2iC5Ag9quu5OzSiUQaMDypongImbdTEJS7KcNTHLqby-LsgK6lQvq5uhv9aFgfAoFoNQZs21ZllnewnBMRhTDEfKxF20mIDUZBltW8N1oAXQgzbycGTq-25XVPLQGluUGlYVRwBgLrcERYHV4gACFLk8g7qN1aipbQeXFe8fAbTtB1+QG8jWlcdrLaV-AzFMERYnQ1TcyYCEZuo1LLk8ZJqLqGaYDmgapCG5sIDAMQo-wEOBo0QbqJENCnGosQADJ855JIFfd2JWhKmmmDUIoY+AYafSYpNPaFI5Fg+Dc4dnfBEj+xgZvr5sE12GBJrd63y6gD6G7ECC5vwToCsIGauqptiIUopxyd9Gem74I4g01ExISKGsre5C4BPItJW7FXkhPqSsZ-H4h8EnkrHeorKfQhtA5-auQMMxCUQAI6OzykvYqpUZpdygHUYs+UxQaDjggxg+A2ZmAHktFa8BqB-VFBtaikpxp1GWokI4bMNrAFGuNSaRCSFCiaLAOhko86-znubIBRZlbimVJ4XWmtiDa0mOhA2Rsg7cLNhTNA3V9yIMdqrfh6FBHCN1mI42dZJgNhgFIuQoD8BwE8GcDo+CYAzQNIKZB8cfRcNzJ5SslihQfA4mGZI5iPix2sb6IBFEMBqF1o7ORaDUI5FfvhXkAA5Zm5j3rR3agmXx-jlGsSETrURhtjaLjNvgRgQkeDZHQoEj4OSmEwHib6NmxBPBOCDIkgRKTVHpPEdRA0ujmz-2Gtw9BMBGQVB4IQaApg2ZoHMVo6sdR8CTO4fYyYcBzYdLQJ+b815Az-iAj0RAABWAATJBUWVAcxoGSv+VA5pYKYTQKJBeLxPzVPIABIGTEnBIwuk0QgRjVQQhCcougWAbLcX+ayfUHwsCxGoL4cujQoAqCQsENmdkfbtHeGzYI1AXjBBElZa5yFMyXGSHBL8xBLiwD2RBIAA" target="_blank"><img src="flems.svg" height="30"> <b>Todo list update handling, on Flems</b></a>

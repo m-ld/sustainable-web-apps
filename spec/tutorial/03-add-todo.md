@@ -3,20 +3,20 @@
 Now that we have a model, we can enable the input box. After the call to `clone`, add these lines:
 
 ```js
-const newInput = document.getElementById("new");
+const newInput = document.getElementById('new');
 newInput.disabled = false;
 ```
 
 Now, you should be able to type into the input box. We want the new Todo item to be added to our Todo list when the user presses \<Enter\>. We do that by adding an event listener for the `keyup` event, like this:
 
 ```js
-newInput.addEventListener("keyup", (e) => {
-    if (e.key === "Enter" && newInput.value.length) {
-        // <add the Todo>
-        
-        // Then clear the input box for the next item
-        newInput.value = "";
-    }
+newInput.addEventListener('keyup', (e) => {
+  if (e.key === 'Enter' && newInput.value.length) {
+    // <add the Todo>
+    
+    // Then clear the input box for the next item
+    newInput.value = '';
+  }
 });
 ```
 
@@ -46,4 +46,4 @@ Now, when you input a Todo in the app and hit \<Enter\>, you'll see data appeari
 Note that the data doesn't exist anywhere other than in your demo app, and now in the playground. By using the playground, you've created your first _clone_ of the data. It just happens that the playground is actually a completely different app. This is a key feature of Sustainable Web Apps, that the data graphs can be shared to other apps, live.
 
 
-<a href="https://flems.io/#0=N4IgZglgNgpgziAXAbVAOwIYFsZJAOgAsAXLKEAGhAGMB7NYmBvAHgEIARAeQGEAVAJoAFAKIACEmQB8AHTQtJUMVAxoA5gF4ZIJttloZxBTAwATfYcMscxDGOqEMAJzgxiWkAFdiYALQAObTEAegtiKxs7TBwPADcIGAB3AAdaJ3CQe3pGBg9EiFNiQg1TGHjqGF98wsIKMQg0CGIIDChfOGpWmA0ARiDQuUsjZuJYKT4YLGSVRjFAIgIxPlpTWgBZADUeFmCRscGjYMITc32WACNlgE8wq1dqZvp7FTg4D2Jl2gxk5KCCjy+fiAbuEjEczDAnE8MC8PGDSk49PshlZCD0pCw7IQnDAwB58Hp3is4NsMOjDmikSCrA1kt5KcjiNMMBVCLQoPCPAB1RzEMRoGAwUxwMTvMRnGBiFb8gD82npVNs3loYFo1E8cHlQ2oz1e2n5iV8hNocoMCqGfz1SRNDKGpggcAwZ1gpk1xAGpqG2zhEP0Yj9Ym2dweaDC2wupmuci9pCg+koIFcsHuEHoCEQIAATD1EAAGEAAXwo6GwuHT+AAVggqHQGExiHgIFM0rzgNr6DA6p5PAV82IwE5aFgxAByEiMuCIYLBSv4LC+dn4NJqYIwAAeboapVXs8rw4A3HJG6l0mJgKtJmlLgAZMowKC9-uDkdj5ITqczucLpcr9fBHBYS951vKAdzgfdDybE9gAASVoAAlC9GDgB8ByHUdiHHSdpzgWd51MRcnGXNc3TgVUAGs3HwFNQPAgw0BrOBeRrSA1DEDRTzkP1tAAAQKbREDELsCgACgASgoTixB4lYsAwBp+LEAADAASYAhNMMT83wWknQgah8DURJcK-QjFIktA-TUJh4HtATiCcTwO0klMBLUpwIAExSXzfYJDOM-Cl0U-M5HzA96NTXkANKJR2IwRI5KYqB22E-UxHPACnGvYC6lghCAKQupmIgNRRLChi2RgfAkrUYTFNWZY73sbEMEYUwxBasRVKKtRkGHbiZLktBhwAXXzRTSsGcK0EYvkkmgtBaV5diVjVHAGAMtwRFgNbiAAIUuaCNMtRJtAmtB9Xmxb8DtB0nUFNi+1aVwwrkC6Fu8fAzFMERYjrK97RyCFhO0CjLk8QE6mEmBRLYqQOIs+owDEKH8FBtiNHY7QRFrBFMgAMjx2bEkuj7YlaRyqqYNQihh4BJL9KK73wRJ3MYYS6YR-0RSaWABLeq6yagRzzK5-NRPwTpiAcYTytgfAIQHJxSq5rn6ZCYJFiOCztRMSEiglGlvDFWhVz7NIRSOWb13qRgsDV-nSfJiVMZAbQwr9YK0DFvd40TGBk1TPAemzHNfGDxAAFYAGYC2GqgoAaMi01QEBolLEBNzXCWXnjTwnHIdNvKwpw4oMppCE8M51QhGscmICXBz-PCm-ZQ0PiwWJqF8MnGigFRK2CbEAN+9p3mxYJqBeYJM+3SeqxAYhLmSdPGMuWBY-zIA" target="_blank"><img src="flems.svg" height="30"> <b>New Todo handler, on Flems</b></a>
+<a href="https://flems.io/#0=N4IgZglgNgpgziAXAbVAOwIYFsZJAOgAsAXLKEAGhAGMB7NYmBvAHgEIARAeQGEAVAJoAFAKIACEmQB8AHTQtJUMVAxoA5gF4ZIJttloZxBTAwATfYcMscxDGOqEMAJzgxiWkAFdiYALQAObTEAegtiKxs7TBwPADcIGAB3AAdaJ3CQe3pGBg9EiFNiQg1TGHjqGF98wsIKMQg0CGIIDChfOGpWmA0ARiDQuUsjZuJYKT4YLGSVRjFAIgIxPlpTWgBZADUeFmCRscGjYMITc32WACNlgE8wq1dqZvp7FTg4D2Jl2gxk5KCCjy+fiAbuEjEczDAnE8MC8PGDSk49PshlZCD0pCw7H9tIRaDg9O8VnBthh0Yc0UiQVYGslvBTkcRphgKjioPCPAB1RzEMRoGAwUxwMTvMRnGBiFa8gD82jplNs3loYFo1E8cFlQ2oz1e2l5iV8BNoMoMcqGWJAuqN9KGpggcAwZ1gpnVxAGxqG2zhEP0Yh9Ym2dweaDC2wupmucg9pCg+koIFcsHuEHoCEQIB6ABZEAAmHogAC+FHQ2FwqfwACsEFQ6AwmMQ8BApmlucBNfQYHVPJ4CnmxGAnLixAByEgMuCIYLBflqGDluD4LC+Vn4NJqScADxdDVKa-nFcHAG45A3UukxMBVpM0pcADJlGBQHt9gfD4ij8eT0zT2fzxemZdOVcYA3YIcCwK9FzvKBdzgA8j0bU9gAASVoAAlS9GDgR9+ywIcR2SMcJynGcKx-JcV3XF04GVABrNx8CTaDYIMNBqzgblq0gNQxA0M85B9QcAAECkHRAxE7AoAAoAEoKD4ocBJWLAMAaESxAAAwAEmAcTTGkvN8BpB0IGofA1ESUi-xXNTZLQH1p15OBbVE4gnE8ds5KTUTtKcCBRLUvCCOCMyLP-NQ1LzOQ80PFjk25MDSiUHiMESZT2KgNsJN1MQLzApwb0gupkLQsCMLqDiIDUKTotY2hYHwdK1AktTVmWe97CcExGFMMQMG5LTyrUZBBMU5S0EHABdPM1KqwYYrQNieSSRC0BpbkeJWFUcAYUy3BEWAtuIAAhS5EN0wddUHGa0F1ZbVvwG07QdfluN7VpXGim6Vu8fAzFMERYlra9bRyCEJMHWjLk8ZJBzqCSYCk7ipF42z6jAMQ4fwCHuI0HjBxEGsnEHMQADJicWxJbu+2JWjc+qmDUIoEeAOSfQnP1fqFI5Fg+b1fXi+98ESHzGAk5mUd9IUmlgUTPru6moDcmyJbzKT8E6YgHAkmq6ohfsnCq30WZCYJFiOWzNRMSEijFalvBFWg117NJObFXkN3qRgsCN2WqZpsVcaYn0IrQFXotjeMYETZM8CzABWRAAAZ83GqgoAaaiU1Qc1i3rNBtzVl5Y08JxyFTAL3ycZLTKaQhPDOVUIWrHJiDV3EQN-dvWX1D4sFiahfGpxooBUCtgg6sCAfad4OuCagXmCLcgILysQGIS5khLOM19gZO8yAA" target="_blank"><img src="flems.svg" height="30"> <b>New Todo handler, on Flems</b></a>
