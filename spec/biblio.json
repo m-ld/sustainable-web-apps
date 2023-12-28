@@ -78,5 +78,9 @@
   "RXJS": {
     "title": "RxJS Reactive Extensions Library for JavaScript",
     "href": "https://rxjs.dev/"
+  },
+  "REACT": {
+    "title": "React: The library for web and native user interfaces",
+    "href": "https://react.dev/"
   }
 }
