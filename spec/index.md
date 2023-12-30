@@ -2,7 +2,7 @@
 
 1. [Introduction](index.md)
 2. [Motivating Use-Cases](use-cases.md)
-3. [Sustainability for Web Apps](sustainability.md)
+3. [Desirable Properties for Web Apps](sustainability.md)
 4. Technical Design
    1. [Prior Art](design/prior-art.md)
    2. [Hypothesis](design/hypothesis.md)
@@ -13,10 +13,12 @@
 
 # introduction
 
-Our goal in this project is to encourage and support the development of
-Sustainable Web Apps.
+Our goal in this project is to encourage and support the development of Web Apps
+with desirable properties which, for the purpose of the project title, we group
+as "Sustainable" (note that late in the project we have deprecated use of this
+term, so it does not appear in the published specification and tutorial).
 
-These are [apps which express](sustainability.md):
+[These properties include](sustainability.md):
 
 - No lock-in
 - No attention theft
@@ -25,45 +27,45 @@ These are [apps which express](sustainability.md):
 But why do so many existing apps lock-in their users and their attention, and
 keep control over their users' personal data? We see two reasons.
 
-First: there is an economic incentive to developing unsustainable apps. Data is
-valuable, and companies who produce applications would prefer to have access to
-as much of it as possible. Active users are valuable, as they produce valuable
-data, and are also available to target with another revenue source, advertising.
-Thus, the more an application developer can keep users and their data tied to a
-platform, the more that application will succeed economically—that is, until and
-unless the users demand an alternative. However, it's hard for users to make
-much progress simply asking for change; the most effective way for users to make
-their needs known is to actually leave the services they disagree with in favor
-of those which treat them better, and to do that, there must be alternatives
-available to move _to_.
+First: there is an economic incentive to developing apps without these
+properties. Data is valuable, and companies who produce applications would
+prefer to have access to as much of it as possible. Active users are valuable,
+as they produce valuable data, and are also available to target with another
+revenue source, advertising. Thus, the more an application developer can keep
+users and their data tied to a platform, the more that application will succeed
+economically—that is, until and unless the users demand an alternative. However,
+it's hard for users to make much progress simply asking for change; the most
+effective way for users to make their needs known is to actually leave the
+services they disagree with in favor of those which treat them better, and to do
+that, there must be alternatives available to move _to_.
 
-Thus, the second reason: there is a technological disincentive to developing
-sustainable apps. It's simply much easier to develop an application in which
-everyone's data is centralized in a database under the application developer's
-control. Exposing that data via some sort of API is a good deal of extra effort
-that can be hard to justify. Interchanging data with other applications, to the
-point of eliminating lock-in, is even harder to justify, as it both gives users
-a route to leave the application _and_ is even harder to build than simply
-exposing the data in some ad-hoc format.
+Thus, the second reason: there is a technological disincentive. It's simply much
+easier to develop an application in which everyone's data is centralized in a
+database under the application developer's control. Exposing that data via some
+sort of API is a good deal of extra effort that can be hard to justify.
+Interchanging data with other applications, to the point of eliminating lock-in,
+is even harder to justify, as it both gives users a route to leave the
+application _and_ is even harder to build than simply exposing the data in some
+ad-hoc format.
 
-We know there are people interested in developing sustainable apps because they
-currently do so, even in the face of technological difficulty. The entire Solid
-project is evidence of this. We have a great deal of respect for Solid and its
-approach, and draw inspiration from it. However, we believe it doesn't provide
-enough to make a range of modern applications easy to build well: in particular,
-apps with real-time multi-user collaboration.
+We know there are people interested in developing apps with desirable properties
+because they currently do so, even in the face of technological difficulty. The
+entire Solid project is evidence of this. We have a great deal of respect for
+Solid and its approach, and draw inspiration from it. However, we believe it
+doesn't provide enough to make a range of modern applications easy to build
+well: in particular, apps with real-time multi-user collaboration.
 
 We therefore propose a set of tools which make real-time multi-user
 collaboration significantly easier to implement without lock-in or forcing users
 to cede control of their personal data.
 
 We will build these tools on top of **m-ld**'s "domains", a CRDT for replicating
-Linked Data graphs in realtime.
+RDF graphs in realtime.
 
 - By replicating the data locally among collaborating participants, we preserve
   the users' ownership of their own data.
-- By using Linked Data as the basis for the data model, we ensure that application
-data is readable at some level by any other Linked Data tool. For instance, the
+- By using RDF as the basis for the data model, we ensure that application
+data is readable at some level by any other semantic web tool. For instance, the
 data can easily be moved between a m-ld domain and a Solid pod if desired, where
 it can be used by other applications. 
 

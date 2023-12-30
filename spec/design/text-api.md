@@ -8,7 +8,7 @@
 
 ## updating text
 
-In our commitment to using [replicated Linked Data sets](hypothesis.md) as a core data representation, we may naturally represent text using the [built-in string type [4]](https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes):
+In our commitment to using [replicated semantic (RDF) graphs](hypothesis.md) as a core data representation, we may naturally represent text using the [built-in string type [4]](https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes):
 
 ```json
 {

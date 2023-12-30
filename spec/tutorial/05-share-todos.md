@@ -1,6 +1,6 @@
 # Sharing the Todos
 
-Now that we can add Todos and see them, let's consider how to share them. The magic of using a Collaborative Web Library implementing a shared graph is that we don't have to change the writing and reading code to do this.
+Now that we can add Todos and see them, let's consider how to share them. The magic of using a Shared-Graph Library implementing a shared graph is that we don't have to change the writing and reading code to do this.
 
 However, we do have to consider how to distribute the _identity_ of the graph, so others can connect to it. A common practice in sharing apps is to include the "location" of the shared information in the page URL. With conventional cloud apps this is issued to the server, and therefore the identity is in the URL path or search. With local-first apps, it can alternatively be in the fragment, which is not sent to the server.
 

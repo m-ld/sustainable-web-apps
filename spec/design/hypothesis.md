@@ -9,7 +9,7 @@ We believe that neither of these are conflicts at all.
 - Having solved client-to-client data distribution, client-to-server becomes a special case, in which one storage location happens to be always-on, and may have access to greater compute and storage capacity. This unifies personal data storage and local-first.
 - Semantic web's data representations are not incompatible with CRDTs – we know this because we have been researching this with the technology **m-ld**, based on an RDF CRDT.
 
-Therefore, our hypothesis in this project is that web app data securely stored in **reactive, replicated Linked Data graphs** can both exhibit the desirable properties of [Sustainable Apps](../sustainability.md) and meet today's and tomorrow's feature expectations without the high costs and limitations of today's distributed data architectures.
+Therefore, our hypothesis in this project is that web app data securely stored in **replicated semantic graphs** can both exhibit the desirable properties of [Sustainable Apps](../sustainability.md) and meet today's and tomorrow's feature expectations without the high costs and limitations of today's distributed data architectures.
 
 ---
 

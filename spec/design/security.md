@@ -1,14 +1,14 @@
 # Security
 
-The security of a Sustainable Web App is subject to a number of vulnerabilities and candidate controls in-common with the underlying web components upon which the [architecture](#reference-architecture) is based. These are mostly well-described online, a good starting point being the OWASP Top Ten [[OWASP]].
+The security of a Web App is subject to a number of vulnerabilities and candidate controls in-common with the underlying web components upon which the [architecture](#reference-architecture) is based. These are mostly well-described online, a good starting point being the OWASP Top Ten [[OWASP]].
 
 Here we specify new or refined considerations arising from the _combination_ of components.
 
 ## Identity and Access Control
 
-The Collaborative Web Library necessarily has to make connections to the Message Delivery and Secure Backup services; as provided services, these are likely to require credentials. But as a local-first application, these credentials cannot generally be safely deployed with the static assets of the application, which are public according to the general principles of the web. So, logically they have to be issued to the _user_, who provides them to the app, and thereby to the lib.
+The Shared-Graph Library necessarily has to make connections to the Message Delivery and Secure Backup services; as provided services, these are likely to require credentials. But as a local-first application, these credentials cannot generally be safely deployed with the static assets of the application, which are public according to the general principles of the web. So, logically they have to be issued to the _user_, who provides them to the app, and thereby to the lib.
 
-Secure issuance of user credentials is generally a solved problem with technologies such as WebID [[WEBID]], OpenID Connect [[OIDC]] and Public Key Infrastructure (PKI) [[PKI]]. The main questions are: which existing technologies are best aligned with sustainability, and how best to securely and easily integrate them into a sustainable web app, without unduly compromising its principles?
+Secure issuance of user credentials is generally a solved problem with technologies such as WebID [[WEBID]], OpenID Connect [[OIDC]] and Public Key Infrastructure (PKI) [[PKI]]. The main questions are: which existing technologies are best aligned with the Shared-Graph Model Pattern, and how best to securely and easily integrate them into a web app, without unduly compromising its principles?
 
 To break down the problem let's label some axes, against which we can evaluate the suitability of technologies.
 
@@ -20,9 +20,9 @@ To break down the problem let's label some axes, against which we can evaluate t
 
 The first thing to note about these axes is that conventional approaches tend to be logically and physically _centralised_: Identity Providers (IdPs); cloud services mediating ownership and access control over user data; certificate authorities; and cloud monitoring and auditing services. This is contrary to our preference for local-first components. However:
 1. While these functions apply to app data, counter-intuitively they do not have to be as available as the data itself, or co-located with it. This is because _all_ apps have always necessarily moved the data to the user for manipulation – you can't see data on a server – and so, existing tools are already designed around this characteristic. For example, PKI certificates [[PKI]] and Json Web Tokens (JWTs) [[RFC7519]] express claims about a user's identity and rights that are valid for a period of time and can be checked without reference to the issuing service.
-2. Many technologies now available make important strides in the direction of the relevant sustainable principles: no lock-in, e.g. via the adoption of standards; and retention of control of personal data, e.g. via server-based personal data stores [[SOLID]].
+2. Many technologies now available make important strides in the direction of the relevant principles: no lock-in, e.g. via the adoption of standards; and retention of control of personal data, e.g. via server-based personal data stores [[SOLID]].
 
-For the purposes of this specification, then, we do not mandate any particular architectural choices for identity and access control, but instead allow apps to assess their choices using the axes above against the sustainability principles. Since not all technologies address all of our axes, there will frequently be a need to combine them. Combinations will entail additional complexities and trade-offs.
+For the purposes of this specification, then, we do not mandate any particular architectural choices for identity and access control, but instead allow apps to assess their choices using the axes above against the principles. Since not all technologies address all of our axes, there will frequently be a need to combine them. Combinations will entail additional complexities and trade-offs.
 
 There follows an informal analysis of some example candidate technologies (a mix of standards and implementations), to illustrate how the axes can be used. Axes that are not addressed by the technology are omitted. The tag **≪partial≫** indicates that the axis is not addressed in full.
 
@@ -68,7 +68,7 @@ The Solid specification delegates identity management, allowing for either of th
 
 Solid establishes a strong ownership model over data by means of personal data _pods_, in which the data reside – at least, as the definitive source of truth. However, Solid pod servers are strictly limited to implementing the Solid specifications – by design, so that they are interchangeable. This means that they cannot be expected to participate in the additional protocol requirements of a local-first technology such as a CRDT.
 
-However, data in Solid is inherently Linked Data, and in which every resource has a URL. This suggests an architecture in which access to the dataset is mediated via a server component, which is able to use the Solid Pod to record ownership of datasets ("deeds"). (Naturally, such a component can also "bank" quiescent data to the Pod when no-one is working on it. This has been proposed previously for **m-ld** domains [[M-LD]].)
+However, data in Solid is inherently Linked Data [[LINKED-DATA]], and in which every resource has a URL. This suggests an architecture in which access to the dataset is mediated via a server component, which is able to use the Solid Pod to record ownership of datasets ("deeds"). (Naturally, such a component can also "bank" quiescent data to the Pod when no-one is working on it. This has been proposed previously for **m-ld** domains [[M-LD]].)
 
 This approach has the drawback that the proposed app server component is not itself substitutable, and so manifests some lock-in. However, if this approach is found to be popular it could be standardised – as part of this initiative, or Solid itself.
 

@@ -1,6 +1,6 @@
 # Adding the Todo List UI
 
-Now that we can add Todo items to our model, we need to show them in the UI. As we mentioned, the Collaborative Web Library will provide us with _updates_ when data changes; and we should respond to all updates through the same code path whether they come from the local user or from a remote one. 
+Now that we can add Todo items to our model, we need to show them in the UI. As we mentioned, the Shared-Graph Library will provide us with _updates_ when data changes; and we should respond to all updates through the same code path whether they come from the local user or from a remote one. 
 
 In general, handling an update and applying it to the local HTML is a matter of translating it into a new state of the HTML Document Object Model (DOM). Web frameworks and libraries like React [[REACT]] are great for handling this concisely and reliably; and as you scale up your app ambitions it would be a good idea to use one.
 

@@ -82,5 +82,29 @@
   "REACT": {
     "title": "React: The library for web and native user interfaces",
     "href": "https://react.dev/"
+  },
+  "MVC": {
+    "title": "MVC - MDN Web Docs Glossary: Definitions of Web-related terms | MDN",
+    "href": "https://developer.mozilla.org/en-US/docs/Glossary/MVC"
+  },
+  "PDS": {
+    "title": "Personal Data Stores (PDS): A Review",
+    "href": "https://doi.org/10.3390%2Fs23031477",
+    "date": "28 January 2023",
+    "authors": ["Fallatah KU", "Barhamgi M", "Perera C"]
+  },
+  "EVENTUALLY-CONSISTENT": {
+    "title": "Eventually Consistent",
+    "href": "https://doi.org/10.1145/1435417.1435432",
+    "authors": ["Vogels, Werner"],
+    "date": "January 2009",
+    "publisher": "Association for Computing Machinery"
+  },
+  "FRP": {
+    "title": "Functional reactive programming from first principles",
+    "href": "https://doi.org/10.1145/349299.349331",
+    "authors": ["Wan, Zhanyong", "Hudak, Paul"],
+    "date": "May 2000",
+    "publisher": "Association for Computing Machinery"
   }
 }

@@ -1,6 +1,6 @@
 # Complete App Example
 
-In the above steps, we have implemented a simple example app based on TodoMVC, which demonstrates the main concepts of a Sustainable Web App. The app Model is a **reactive, replicated Linked Data graph**, stored locally and shared with other instances of the app.
+In the above steps, we have implemented a simple example app based on TodoMVC, which demonstrates the main concepts of the Shared-Graph Model Pattern. The app Model is a **replicated semantic graph**, stored locally and shared with other instances of the app.
 
 The project https://github.com/m-ld/m-ld-todomvc-vanillajs showcases a completed app implementing the full TodoMVC specification, including task statuses (complete and active), and filters. It follows the same pattern as this tutorial.
 

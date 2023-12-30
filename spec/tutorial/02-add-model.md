@@ -2,9 +2,9 @@
 
 At the moment, the "Todos" app just shows an input box for adding the first Todo. You might think of the state this is presenting as an empty "Todos UI model" – or, because the box is disabled, a state _prior to_ the availability of a model that can be added to.
 
-In a Sustainable Web App it's important to start thinking of the model early, because it is the unit of editing and data distribution. In due course, we're going to be _sharing_ the Todos model between users as a _linked data graph_. There are other ways to structure the user experience; but for the purposes of this tutorial, we're going to have a simple 1:1 mapping between the UI model and the graph.
+It's important to start thinking of the model early, because it is the unit of editing and data distribution. In due course, we're going to be _sharing_ the Todos model between users as a _semantic graph_. There are other ways to structure the user experience; but for the purposes of this tutorial, we're going to have a simple 1:1 mapping between the UI model and the graph.
 
-So, the first thing we have to do is establish the sharable graph model. This is not something that is provided by browsers yet, so we need a library (we called it the "Collaborative Web Library" [in the specification](http://localhost:3002/web-zero/spec/index.html#reference-architecture)). In this tutorial we're going to use the **m-ld** [JavaScript engine](https://edge.js.m-ld.org/).
+So, the first thing we have to do is establish the sharable graph model. This is not something that is provided by browsers yet, so we need a library (we called it the "Shared-Graph Library" [in the specification](http://localhost:3002/web-zero/spec/index.html#reference-architecture)). In this tutorial we're going to use the **m-ld** [JavaScript engine](https://edge.js.m-ld.org/).
 
 To get started we need a JavaScript file. If you're using Flems, just switch to the ".js" tab. Otherwise, create a new empty file next to your HTML file, called `app.js`, and link the file to the HTML by adding a line in the `head` like this:
 

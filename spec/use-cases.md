@@ -1,10 +1,10 @@
 # Use-Cases
 
-This specification intentionally encompasses a wide range of end-user use-cases. No compromise should be necessary in building a [=sustainable=] app versus building an unsustainable one, for a large set of them.
+This specification intentionally encompasses a wide range of end-user use-cases. No compromise should be necessary in building a web app with the desirable properties versus building one without, for a large set of them.
 
-However, we are clearly not going to demonstrate radical improvements to every possible web app. So actually, our 'users' are the engineers who build those apps. We look at use-cases not only from the end-user perspective but also from the engineer perspective, to motivate our design hypothesis. In the context of this project, we especially want to consider cases that we can usefully demonstrate, taking the role of application developers ourselves; and still give confidence that the solution will scale to production features and workloads.
+However, we are clearly not going to demonstrate radical improvements to every possible web app. So actually, our 'users' are the engineers who build those apps. We look at use-cases not only from the end-user perspective but also from the engineer perspective, to motivate the pattern. We especially want to consider cases that we can usefully demonstrate, taking the role of application developers ourselves; and still give confidence that the solution will scale to production features and workloads.
 
-The following use-cases are primarily drawn from the personal experience of the project team, both as users and as engineers.
+The following use-cases are primarily drawn from the personal experience of the authorship team, both as users and as engineers.
 
 ### Terminology
 

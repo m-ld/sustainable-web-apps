@@ -8,7 +8,7 @@ With this definition of done, we force ourselves to provide an **exceptionally s
 
 As we mentioned before, our motivating narrative encompasses a wide range of use-cases. Our analysed [use-cases](../use-cases.md) and our hypothesis are oriented towards apps which present coherent _working sets_ of data, like a project, notes folder, or experiment write-up; as opposed to, say, a social network app with an "infinite scroll" data feed. We don't see these categories as being fundamentally opposed or even particularly distinct: all existing infinite scroll apps necessarily manage a working set of data in-memory anyway. The complexity of doing so is definitely significant; but we think it's something that can be added to the mix later.
 
-With regard to the sustainable principle of _no lock-in_, we note that social networks also exhibit _network effect_ lock-in. That is, where some conventional social networks keep you there because you can't leave without leaving your friends behind (regardless of how much data you take with you), other (federated) networks let you move elsewhere and still connect with the same network of people. We hope to demonstrate compatibility of our approach and federation in the future.
+With regard to the principle of _no lock-in_, we note that social networks also exhibit _network effect_ lock-in. That is, where some conventional social networks keep you there because you can't leave without leaving your friends behind (regardless of how much data you take with you), other (federated) networks let you move elsewhere and still connect with the same network of people. We hope to demonstrate compatibility of our approach and federation in the future.
 
 ## work breakdown
 
@@ -20,9 +20,9 @@ Here's how we see everything breaking down. Note that the implementation artefac
 
 That's this repository!
 
-It provides a draft specification for the library code we deliver, including defining a "sustainable app"; requirements with motivating use-cases; the technical approach taken, including justification of the project hypothesis; and abstract interface descriptions for application developers and framework developers.
+It provides a draft specification for the library code we deliver, including defining the desirable properties of a "sustainable app"; requirements with motivating use-cases; the technical approach taken, including justification of the project hypothesis; and abstract interface descriptions for application developers and framework developers.
 
-Note that to avoid getting too obtuse, we will not create a "specification specification" here; instead we will create a draft Sustainable Web Apps specification and iterate and improve it over the course of the project.
+Note that to avoid getting too obtuse, we will not create a "specification specification" here; instead we will create a draft specification and iterate and improve it over the course of the project.
 
 ### m-ld
 
@@ -30,7 +30,7 @@ As you can read in the [architecture](architecture.md), we want to layer our imp
 
 #### Text CRDT
 
-All our analysed [use-cases](../use-cases.md) involve editable text, and since we want to support live collaboration, that text generally needs to be editable by multiple users at the same time. We're going to build support for an [embedded text CRDT in **m-ld**](https://github.com/m-ld/m-ld-spec/issues/35). More generally, we will allow an application using **m-ld** to choose an appropriate data type for any given value in the Linked Data graph, such as binary when storing image data.
+All our analysed [use-cases](../use-cases.md) involve editable text, and since we want to support live collaboration, that text generally needs to be editable by multiple users at the same time. We're going to build support for an [embedded text CRDT in **m-ld**](https://github.com/m-ld/m-ld-spec/issues/35). More generally, we will allow an application using **m-ld** to choose an appropriate data type for any given value in the RDF graph, such as binary when storing image data.
 
 #### SHACL support
 
@@ -40,21 +40,23 @@ In-line with our desire for an exceptionally smooth developer experience, we wan
 
 We will provide and run an open-source cloud service that fulfils the requirements identified in the [architecture](architecture.md) for a server-based data store and message relay. This will help eliminate getting-started overhead for trials, research, personal projects and startups. In our demonstration we will emphasise that the Gateway is used for convenience and data durability, but is optional, and could be self-hosted.
 
-### Collaborative Web Library
+### Shared-Graph Library
 
-We will develop a developer-friendly solution for developing highly-interactive local-first applications using broadly adopted Linked Data semantics. It will essentially comprise the support necessary to use **m-ld** conveniently in a local-first web application.
+> This component was formerly called the "Collaborative Web Library"
+
+We will develop a developer-friendly solution for developing highly-interactive local-first applications using broadly adopted RDF semantics. It will essentially comprise the support necessary to use **m-ld** conveniently in a local-first web application.
 
 #### Reactive Observable Query
 
-We will implement an interface which exposes the results of a useful query over a Linked Data graph as an RxJS Observable, suitable for any reactive application to subscribe to.
+We will implement an interface which exposes the results of a useful query over a RDF graph as an RxJS Observable, suitable for any reactive application to subscribe to.
 
 #### Writing Data
 
-We will develop simple API patterns for multi-collaborator writing to the Linked Data graph from the applications.
+We will develop simple API patterns for multi-collaborator writing to the RDF graph from the applications.
 
 #### TypeScript Support
 
-We will develop and demonstrate patterns for using design-time application data types in the collaborative web library. We will offer patterns and tools to make this suitably ergonomic for an application using the Observables and hooks described above.
+We will develop and demonstrate patterns for using design-time application data types in the Shared-Graph Library. We will offer patterns and tools to make this suitably ergonomic for an application using the Observables and hooks described above.
 
 #### Security Support
 
@@ -62,11 +64,11 @@ We will develop examples and tests to show integration with identity providers, 
 
 #### Text Editing Support
 
-We will provide support in the Collaborative Web Library to easily use the new **m-ld** [Text CRDT](#text-crdt).
+We will provide support in the Shared-Graph Library to easily use the new **m-ld** [Text CRDT](#text-crdt).
 
 ### Demo & Tutorial
 
-In our closing demonstration, we will use the Collaborative Web Library and cloud Gateway to build a live web application, with the nature of a collaborative web page, having no additional server components, from scratch, using only readily-available tools.
+In our closing demonstration, we will use the Shared-Graph Library and cloud Gateway to build a live web application, with the nature of a collaborative web page, having no additional server components, from scratch, using only readily-available tools.
 
 We'll provide the demo also as an online tutorial for developers to try out and to remix, and to base their Sustainable apps on!
 

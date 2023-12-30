@@ -3,8 +3,8 @@
 skinparam componentStyle rectangle
 
 node "Web Browser" {
-  component "Sustainable\nWeb App" as app #pink
-  component "Collaborative\nWeb Library" as cwl {
+  component "Web App" as app #pink
+  component "Shared-Graph\nLibrary" as cwl {
     [Graph]
   }
 
@@ -12,7 +12,7 @@ node "Web Browser" {
 
   Graph <--> local
 
-  app --> cwl
+  app --> Graph : <<model>>
 }
 
 cloud CDN {
